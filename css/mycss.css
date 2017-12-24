@@ -1,0 +1,69 @@
+/*write in all codes*/
+*{
+	padding:0px;
+	margin:0px;
+}
+
+h1{
+	font:bold 20px Tahoma;
+}
+
+h2{
+	font:bold 14px Tahoma;
+}
+
+header,section,footer,aside,nav,article,hgroup{
+	display: block;
+}
+
+body{
+	text-align: center;
+}
+
+#big-wrapper {
+	border:1px solid black;
+	width:100vw; /*change to 1000px */
+	margin:20px auto; /*padding from top of site*/
+}
+
+#copyright{
+	clear: both;
+	text-align: center;
+	padding: 20px;
+	border-top:2px solid green;
+}
+
+/*till here*/
+
+#top-header{
+	background-color: yellow;
+	border:1px solid blue;
+	padding:20px;
+	height: 100vh;
+}
+
+#top-menu li{
+	display: inline-block;
+	font:bold 14px Tahoma;
+}
+
+#about{
+	background-color: gray;
+	height:100vh;
+}
+
+#project{
+	background-color: orange;
+	height:100vh;
+}
+
+#about-ar{
+	float: left;
+	width:66vw;		/*remember width and margin*/
+	margin:2vw;
+}
+#about-pic{
+	float:left;
+	width:26vw;
+	margin:2vw;
+}
