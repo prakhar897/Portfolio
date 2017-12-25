@@ -30,16 +30,20 @@ body{
 	clear: both;
 	text-align: center;
 	padding: 20px;
-	border-top:2px solid green;
+	color:white;
+	background-color: black;
+	border-top:1px solid white;
 }
 
 /*till here*/
 
 #top-header{
-	background-color: yellow;
+	background-image:url(../images/pic1.jpg);
+	background-size: cover;
 	border:1px solid blue;
 	padding:20px;
 	height: 100vh;
+	color:white;
 }
 
 #top-menu li{
@@ -48,22 +52,30 @@ body{
 }
 
 #about{
-	background-color: gray;
+	background-color: black;
 	height:100vh;
+	color:white;
 }
 
 #project{
-	background-color: orange;
+	background-color: black;
 	height:100vh;
+	color:white;
 }
 
 #about-ar{
 	float: left;
-	width:66vw;		/*remember width and margin*/
+	width:65vw;		/*remember width and margin*/
 	margin:2vw;
 }
 #about-pic{
 	float:left;
 	width:26vw;
 	margin:2vw;
+}
+
+#contactme{
+	background-color: black;
+	color: white;
+	height: 100vh;
 }
