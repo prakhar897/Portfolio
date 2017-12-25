@@ -23,7 +23,6 @@ body{
 #big-wrapper {
 	border:1px solid black;
 	width:100vw; /*change to 1000px */
-	margin:20px auto; /*padding from top of site*/
 }
 
 #copyright{
@@ -38,16 +37,18 @@ body{
 /*till here*/
 
 #top-header{
-	background-image:url(../images/pic1.jpg);
+	background-image:url(../images/pic5.jpg);
 	background-size: cover;
-	border:1px solid blue;
-	padding:20px;
+	border-bottom:1px solid white;
 	height: 100vh;
 	color:white;
+	margin-top:-20px;
+	padding-top: 40px;
+	
 }
 
 #top-menu li{
-	display: inline-block;
+	display: block;
 	font:bold 14px Tahoma;
 }
 
@@ -55,27 +56,53 @@ body{
 	background-color: black;
 	height:100vh;
 	color:white;
+	background-image: url(../images/pic4.jpg);
+	background-size: cover;
 }
 
 #project{
 	background-color: black;
 	height:100vh;
 	color:white;
+	border-top: 1px solid white;
+	background-image: url(../images/pic1.jpg);
+	background-size: cover;
 }
 
 #about-ar{
-	float: left;
-	width:65vw;		/*remember width and margin*/
-	margin:2vw;
+
+		/*remember width and margin*/
 }
 #about-pic{
-	float:left;
-	width:26vw;
-	margin:2vw;
+height:300px;
+width:300px;
+border-radius: 50%;
 }
 
 #contactme{
 	background-color: black;
 	color: white;
 	height: 100vh;
+	border-top: 1px solid white;
+	background-image: url(../images/pic3.jpg);
+	background-size: cover;
+}
+
+
+#hg > *{
+font-family: "Bebasneue bold", sans-serif;
+font-size: 41px;
+font-style: normal;
+font-weight: bold;
+letter-spacing: normal;
+line-height: 62px;
+text-transform: none;
+color: #E6E6E6;
+padding-top: 20px;
+}
+
+
+
+#namespan{
+ color:orange;
 }

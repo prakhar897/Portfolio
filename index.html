@@ -6,11 +6,12 @@
 
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/mycss.css">
 </head>
 <body>
 	<!-- Home page -->
-	<div id="big-wrapper">
+	<div id="container big-wrapper">
 		<nav class="navbar navbar-inverse" id="top-menu">
   			<div class="container">
     			<div class="navbar-header">
@@ -27,9 +28,9 @@
 
 		<header id="top-header">
 			<div class="container">
-			<hgroup>
+			<hgroup id="hg">
 			<h1>PORTFOLIO</h1>
-				<h2>My name is <span>Prakhar Gupta</span> and i<br> am on my way to becoming a front end web developer.<br>Here is my portfolio and i will upload projects as i progress.
+				<h2>My name is <span id="namespan">Prakhar Gupta</span> and i<br> am on my way to becoming a front end web developer.<br>Here is my portfolio and i will upload projects as i progress.
 				</h2>
 			</hgroup>
 			</div>
@@ -45,9 +46,11 @@
 						<div class="col-md-8">
 							<p>Hello! My full name is Prakhar Gupta, i am a 19 years Jaipur,India.I first started using a computer at age 6, and since then, have fallen in love with the informatic world. Then the Internet came along and changed everything. Now i am certain that i want to be part of the community of professionals that make Internet a really beautiful and interesting place.</p>
 						</div>
+					
 						<div class="col-md-4">
-						<img src="images/pic2.jpg" class="img-responsive">
+						<img  src="images/pic2.jpg" id="about-pic" class="img-responsive pull-right">
 						</div>
+
 					</div>
 				</article>
 			</div>
@@ -73,6 +76,27 @@
 			</header>
 			<article>
 				<p>Should you need any further information,feel free to contact me.I'm very open to suggestions.</p>
+				<ul class="list-inline banner-social-buttons">
+					<li>
+						<a href="https://twitter.com/Smoke48112156" class="btn btn-info btn-lg" target="_blank">
+						<i class="fa fa-twitter fa-fw"></i> 
+						<span class="network-name">Twitter</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/prakhar897" class="btn btn-default btn-lg btn-git" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/prakhar-gupta-78984512b" class="btn btn-primary btn-lg btn-lin" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+					</li>
+					<li>
+						<a href="https://www.freecodecamp.org/prakhar897" class="btn btn-default btn-lg btn-fcc" target="_blank"><i class="fa fa-fire fa-fw"></i> <span class="network-name">FreeCodeCamp</span></a>
+					</li>
+					<li>
+						<a href="mailto:16ucs131@lnmiit.ac.in" class="btn btn-danger btn-lg btn-fcc" target="_blank"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
+					</li>
+				</ul>
+
 			</article>
 			</div>
 		</section>
@@ -84,4 +108,5 @@
 		</footer>
 	</div>
 </body>
+
 </html>
