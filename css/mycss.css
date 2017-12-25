@@ -4,14 +4,6 @@
 	margin:0px;
 }
 
-h1{
-	font:bold 20px Tahoma;
-}
-
-h2{
-	font:bold 14px Tahoma;
-}
-
 header,section,footer,aside,nav,article,hgroup{
 	display: block;
 }
@@ -39,7 +31,6 @@ body{
 #top-header{
 	background-image:url(../images/pic5.jpg);
 	background-size: cover;
-	border-bottom:1px solid white;
 	height: 100vh;
 	color:white;
 	margin-top:-20px;
@@ -64,14 +55,12 @@ body{
 	background-color: black;
 	height:100vh;
 	color:white;
-	border-top: 1px solid white;
 	background-image: url(../images/pic1.jpg);
 	background-size: cover;
 }
 
 #about-ar{
 
-		/*remember width and margin*/
 }
 #about-pic{
 height:300px;
@@ -83,24 +72,26 @@ border-radius: 50%;
 	background-color: black;
 	color: white;
 	height: 100vh;
-	border-top: 1px solid white;
 	background-image: url(../images/pic3.jpg);
 	background-size: cover;
 }
 
 
-#hg > *{
+h1,h2{
 font-family: "Bebasneue bold", sans-serif;
-font-size: 41px;
+font-size: 44px;
 font-style: normal;
 font-weight: bold;
 letter-spacing: normal;
 line-height: 62px;
 text-transform: none;
 color: #E6E6E6;
-padding-top: 20px;
+padding-top: 40px;
 }
 
+h2{
+	font-size:39px;
+}
 
 
 #namespan{
