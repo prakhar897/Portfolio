@@ -57,15 +57,18 @@ body{
 	color:white;
 	background-image: url(../images/pic1.jpg);
 	background-size: cover;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
 }
 
 #about-ar{
+	font:bold 24px Tahoma;
 
 }
+
 #about-pic{
 height:300px;
 width:300px;
-border-radius: 50%;
 }
 
 #contactme{
@@ -86,7 +89,7 @@ letter-spacing: normal;
 line-height: 62px;
 text-transform: none;
 color: #E6E6E6;
-padding-top: 40px;
+padding-bottom: 40px;
 }
 
 h2{
@@ -107,4 +110,8 @@ h2{
 	-webkit-border-radius:0px;
 	border-radius: 0px;
 	-moz-border-radius: 0px;
+}
+
+#contactpara{
+	font:bold 24px Tahoma;
 }
