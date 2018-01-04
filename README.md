@@ -1,4 +1,4 @@
-Installation Instructions ?
+#Installation Instructions
 
     Clone or download the repo. into any fresh temporary folder.
 
@@ -8,7 +8,7 @@ Installation Instructions ?
 
     I have attached screenshots below.
 
-Contributing
+#Contributing
 
     Create your branch: git checkout -b my-new-feature
 
