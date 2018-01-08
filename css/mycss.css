@@ -17,19 +17,15 @@ body{
 	width:100vw; /*change to 1000px */
 }
 
-#copyright{
-	clear: both;
-	text-align: center;
-	padding: 20px;
-	color:white;
-	background-color: black;
-	border-top:1px solid white;
-}
-
 /*till here*/
 
+#top-menu li{
+	display: block;
+	font:bold 14px Tahoma;
+}
+
 #top-header{
-	background-image:url(../images/pic5.jpg);
+	background-color:black;
 	background-size: cover;
 	height: 100vh;
 	color:white;
@@ -38,16 +34,14 @@ body{
 	
 }
 
-#top-menu li{
-	display: block;
-	font:bold 14px Tahoma;
+#top-text{
+	position-top: 50%;
 }
-
 #about{
 	background-color: black;
 	height:100vh;
 	color:white;
-	background-image: url(../images/pic4.jpg);
+	background-color:black;
 	background-size: cover;
 }
 
@@ -55,7 +49,6 @@ body{
 	background-color: black;
 	height:170vh;
 	color:white;
-	background-image: url(../images/pic1.jpg);
 	background-size: cover;
 	border-top: 1px solid white;
 	border-bottom: 1px solid white;
@@ -76,7 +69,6 @@ margin-top: 100px;
 	background-color: black;
 	color: white;
 	height: 100vh;
-	background-image: url(../images/pic3.jpg);
 	background-size: cover;
 }
 
@@ -116,4 +108,13 @@ h2{
 #contactpara{
 	font:bold 24px Tahoma;
 	margin-bottom: 300px;
+}
+
+#copyright{
+	clear: both;
+	text-align: center;
+	padding: 20px;
+	color:white;
+	background-color: black;
+	border-top:1px solid white;
 }
