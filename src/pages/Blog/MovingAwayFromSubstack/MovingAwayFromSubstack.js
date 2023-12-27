@@ -36,6 +36,8 @@ const MovingAwayFromSubstack = () => {
 				I tried Substack. It was fine, I suppose. But truth be told, I
 				failed to find any compelling reason why it stood out from
 				platforms like Medium.
+				<br />
+				<br />
 			</p>
 
 			<p>
@@ -44,6 +46,8 @@ const MovingAwayFromSubstack = () => {
 				you might notice a disheartening transformation. It's become a
 				cluttered space, resembling spam-filled sites like Quora or even
 				Google's over-optimized front page.
+				<br />
+				<br />
 			</p>
 
 			<p>
@@ -51,6 +55,8 @@ const MovingAwayFromSubstack = () => {
 				and gating most publications behind a paywall. It's frustrating
 				to be lured in by promising articles only to hit a dead end
 				behind a payment prompt.
+				<br />
+				<br />
 			</p>
 
 			<p>
@@ -58,6 +64,8 @@ const MovingAwayFromSubstack = () => {
 				that they've outgrown their prime and are now scrambling for
 				every penny before potentially fading into obscurity or being
 				swallowed by a faceless conglomerate, much like Vox or Tumblr.
+				<br />
+				<br />
 			</p>
 
 			<p>
@@ -65,6 +73,8 @@ const MovingAwayFromSubstack = () => {
 				independent writers who wrote content on Medium. All their
 				efforts have gone to vain. They have to start from scratch on a
 				new platform.
+				<br />
+				<br />
 			</p>
 
 			<p>
@@ -73,6 +83,8 @@ const MovingAwayFromSubstack = () => {
 				writers will vanish alongside it. Sure, you can notify your
 				subscribers about the move, but a lot people like to directly
 				visit the blog instead of subscribing.
+				<br />
+				<br />
 			</p>
 
 			<p>
@@ -80,6 +92,8 @@ const MovingAwayFromSubstack = () => {
 				and provides the option to export your email list right??. I'm
 				sure these will the axed as soon as profitability becomes an
 				issue since they provide a nice lock in.
+				<br />
+				<br />
 			</p>
 
 			<p>
@@ -88,9 +102,13 @@ const MovingAwayFromSubstack = () => {
 				tinker with the design and layouts as I wish. I still maintain
 				my cherished list of subscribers, albeit with a little more
 				manual effort.
+				<br />
+				<br />
 			</p>
 
-			<p>Thanks for Reading!!</p>
+			<p>
+				Thanks for Reading!! <br />
+			</p>
 
 			<h2>References</h2>
 			<ol>
