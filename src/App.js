@@ -15,7 +15,6 @@ import Diffudle from "./pages/Projects/Diffudle";
 import HeadlineHero from "./pages/Projects/HeadlineHero";
 import NodeSaas from "./pages/Projects/NodeSaas";
 import HNCommentsDrawerDemo from "./pages/Misc/HNCommentsDrawerDemo";
-import Test from "./pages/Test";
 import "./App.css";
 import HireMe from "./pages/HireMe";
 import SkillTree from "./pages/SkillTree";
@@ -80,8 +79,6 @@ function App() {
 						path="/misc/hn-comments-drawer-demo"
 						element={<HNCommentsDrawerDemo />}
 					/>
-
-					<Route path="/test" element={<Test />} />
 				</Routes>
 			</div>
 		</Router>
