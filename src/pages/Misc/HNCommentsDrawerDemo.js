@@ -1,29 +1,50 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const HNCommentsDrawerDemo = () => {
-    return (
-        <>
-            <h1>Hacker News Comments</h1>
+	useEffect(() => {
+		const script = document.createElement("script");
+		script.src =
+			"https://cdn.jsdelivr.net/gh/prakhar897/hn-comments-drawer@latest/src/script.js";
+		script.async = true;
 
-            <h2>Story 1 Comments</h2>
+		script.onload = () => {
+			const rootElement = document.querySelector(
+				'[hn-story-id="38300167"]'
+			);
 
-            <div
-                className="hn-comments-drawer"
-                hn-story-id="38300167"
-                hn-max-depth="10"
-            ></div>
+			const options = {
+				maxDepth: 5,
+			};
 
-            <h2>Story 2 Comments</h2>
+			window.displayHNComments("38300167", rootElement, options);
 
-            <div
-                className="hn-comments-drawer"
-                hn-story-id="38378455"
-                hn-max-depth="10"
-            ></div>
+			const rootElement2 = document.querySelector(
+				'[hn-story-id="38378455"]'
+			);
 
-            <script src="https://cdn.jsdelivr.net/gh/prakhar897/hn-comments-drawer@latest/src/script.js"></script>
-        </>
-    );
+			window.displayHNComments("38378455", rootElement2, options);
+		};
+
+		document.body.appendChild(script);
+	}, []);
+
+	return (
+		<>
+			<h1>Hacker News Comments</h1>
+
+			<h2>Story 1 Comments</h2>
+
+			<div className="hn-comments-drawer" hn-story-id="38300167"></div>
+
+			<h2>Story 2 Comments</h2>
+
+			<div
+				className="hn-comments-drawer"
+				hn-story-id="38378455"
+				hn-max-depth="10"
+			></div>
+		</>
+	);
 };
 
 export default HNCommentsDrawerDemo;
