@@ -15,9 +15,11 @@ import Diffudle from "./pages/Projects/Diffudle";
 import HeadlineHero from "./pages/Projects/HeadlineHero";
 import NodeSaas from "./pages/Projects/NodeSaas";
 import HNCommentsDrawerDemo from "./pages/Misc/HNCommentsDrawerDemo";
+import Resurrecting from "./pages/Projects/Resurrecting";
 import "./App.css";
 import HireMe from "./pages/HireMe";
 import SkillTree from "./pages/SkillTree";
+import LLMVulnerabilityPlayground from "./pages/Blog/PlaygroundForLLMVulnerabilites/LLMVulnerabilityPlayground";
 
 function App() {
 	return (
@@ -31,6 +33,10 @@ function App() {
 					<Route path="/skillTree" element={<SkillTree />} />
 
 					{/* Routes for individual blog posts */}
+					<Route
+						path="/blog/playing-with-llm-vulnerabilities"
+						element={<LLMVulnerabilityPlayground />}
+					/>
 					<Route
 						path="/blog/moving-away-from-substack"
 						element={<MovingAwayFromSubstack />}
@@ -53,6 +59,11 @@ function App() {
 					/>
 
 					{/* Routes for individual projects */}
+
+					<Route
+						path="/projects/resurrecting"
+						element={<Resurrecting />}
+					/>
 					<Route
 						path="/projects/li-quoridor"
 						element={<LiQuoridor />}

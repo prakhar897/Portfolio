@@ -8,6 +8,11 @@ const Projects = () => {
 			<Navbar />
 			<ul>
 				<li>
+					<Link to="/projects/resurrecting">
+						Resurrect.ing <b>[30 Dec 2023]</b>
+					</Link>
+				</li>
+				<li>
 					<Link to="/projects/li-quoridor">
 						Li Quoridor <b>[10 Dec 2023]</b>
 					</Link>

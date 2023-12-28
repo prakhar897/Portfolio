@@ -107,6 +107,7 @@ img {
 ul {
 	text-align: left;
 	margin-top: 1rem;
+	list-style-type: lower-greek;
 }
 
 li {
