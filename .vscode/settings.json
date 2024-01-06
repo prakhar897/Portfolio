@@ -1,10 +1,4 @@
 {
-    "[python]": {
-        "editor.insertSpaces": false,
-        "editor.tabSize": 4,
-        "editor.formatOnSave": true
-    },
-
     "editor.tabSize": 4,
     "editor.detectIndentation": true,
     "editor.wordWrap": "on",
@@ -18,7 +12,8 @@
     "html.format.indentHandlebars": true,
     "html.format.extraLiners": "head, body, /html",
     "html.format.unformatted": "code, pre, tt",
-    "html.format.wrapAttributes": "force-aligned",
+    "html.format.wrapAttributes": "force",
+    "htmlWhitespaceSensitivity": "strict",
     "emmet.includeLanguages": {
         "html": "html",
         "javascript": "javascriptreact"
