@@ -12,36 +12,37 @@ const ColdMessageAI = () => {
 				<i> 08 Sep 2023 </i>
 			</h6>
 
-			<iframe
-				width="100%"
-				src="https://www.youtube.com/embed/MRQWbVcexSc"
-				title="LinkedIn Cold Messaging Using GPT"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				allowfullscreen
-			></iframe>
+			<p>
+				ColdMessageAI is a Completely Free and Open Source Cold Message
+				writer which harnesses the power of GPT to write
+				hyper-personalized messages. Personalized messages are more
+				likely to get replies than cookie cutter ones. But hand-writing
+				them is tiring, so we've automated this process.
+			</p>
 
 			<p>
-				GPT Written LinkedIn messages <br /> <br />
-				ColdMessageAI is a Completely Free and Open Source Cold Message
-				writer which harnesses the power of ChatGPT to write
-				hyper-personalized messages. It takes info from LinkedIn
-				profiles and your prompt to create a personalized message for a
-				specific person. <br /> <br />
-				Personalized messages are more likely to get replies than cookie
-				cutter ones. But hand-writing them is tiring, so I've automated
-				this process. <br /> <br />
+				Also created a completely free ColdMessage AI Chrome extension
+				which does the whole process on linkedIn for free.
 			</p>
 
 			<p>
 				<ul>
 					<li>
 						<a
-							href="https://chrome.google.com/webstore/detail/coldmessagegpt-gpt-writte/abbbgckfinjdbndjjjlpkkkoefklnaih?hl=en&authuser=0"
+							href="https://coldmessageai.vercel.app/"
 							target="_blank"
 							rel="noreferrer"
 						>
 							Project Link
+						</a>{" "}
+					</li>
+					<li>
+						<a
+							href="https://chrome.google.com/webstore/detail/coldmessagegpt-gpt-writte/abbbgckfinjdbndjjjlpkkkoefklnaih?hl=en&authuser=0"
+							target="_blank"
+							rel="noreferrer"
+						>
+							Extension Link
 						</a>{" "}
 					</li>
 					<li>
@@ -51,17 +52,7 @@ const ColdMessageAI = () => {
 							rel="noreferrer"
 						>
 							{" "}
-							YouTube Demo{" "}
-						</a>{" "}
-					</li>
-					<li>
-						<a
-							href="https://github.com/prakhar897/ColdMessageAI"
-							target="_blank"
-							rel="noreferrer"
-						>
-							{" "}
-							Source Code{" "}
+							Extension YouTube Demo{" "}
 						</a>{" "}
 					</li>
 				</ul>
