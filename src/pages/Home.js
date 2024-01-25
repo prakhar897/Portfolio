@@ -7,7 +7,7 @@ const Home = () => {
 			<Navbar />
 
 			<a
-				href="https://tubesearch.prakgupta.com/"
+				href="https://tubesearch.vercel.app/"
 				target="_blank"
 				rel="noreferrer"
 				className="font-orbitron border py-4 rounded-3xl text-center grid place-items-center"
