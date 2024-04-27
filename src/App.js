@@ -8,6 +8,7 @@ import ToDoListThatWorks from "./pages/Blog/ToDoListThatActuallyWorks/ToDoListTh
 import EnvisioningFutureWithGPT from "./pages/Blog/EnvisioningFutureWithGPT/EnvisioningFutureWithGPT";
 import ChatGPTInDiffudle from "./pages/Blog/ChatGPTInDiffudle/ChatGPTInDiffudle";
 import HNCommentsDrawerDemo from "./pages/Misc/HNCommentsDrawerDemo";
+import GettingIntoBigTechReliably from "./pages/Blog/Getting into Big Tech Reliably/Getting into Big Tech Reliably";
 import "./App.css";
 import HireMe from "./pages/HireMe";
 import LLMVulnerabilityPlayground from "./pages/Blog/PlaygroundForLLMVulnerabilites/LLMVulnerabilityPlayground";
@@ -24,6 +25,10 @@ function App() {
 					<Route path="/hireme" element={<HireMe />} />
 
 					{/* Routes for individual blog posts */}
+					<Route
+						path="/blog/getting-into-big-tech-reliably"
+						element={<GettingIntoBigTechReliably />}
+					/>
 					<Route
 						path="/blog/playing-with-llm-vulnerabilities"
 						element={<LLMVulnerabilityPlayground />}

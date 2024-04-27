@@ -8,6 +8,16 @@ const Blog = () => {
 			<Navbar />
 			<ul>
 				{/* <li>
+					<Link>
+						Why I created Json Fixer <b>[WIP]</b>
+					</Link>
+				</li> */}
+				<li>
+					<Link to="/blog/getting-into-big-tech-reliably">
+						Getting into Big Tech Reliably <b>[27 Apr 2024]</b>
+					</Link>
+				</li>
+				{/* <li>
 					<Link to="/blog/playing-with-llm-vulnerabilities">
 						Playing with LLM Vulnerabilites <b>[30 Dec 2023]</b>
 					</Link>
