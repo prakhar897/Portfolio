@@ -6,25 +6,36 @@ const GettingIntoBigTechReliably = () => {
 	const [lcRounds, setLcRounds] = useState(4);
 	const [otherRounds, setOtherRounds] = useState(1);
 	const [isPrepared, setIsPrepared] = useState(false);
-	const [probability, setProbability] = useState(0);
-	const [attempts, setAttempts] = useState(0);
+	const [lcprobability, setLCProbability] = useState(0.1111);
+	const [probability, setProbability] = useState(0.0556);
+	const [attempts, setAttempts] = useState(9);
 
 	const calculateProbability = () => {
-		const passes = lcPerformance
-			.split("")
-			.filter((char) => char === "P").length;
-		const fails = lcPerformance
-			.split("")
-			.filter((char) => char === "F").length;
+		var totalRounds = 0;
+		var selectedRounds = 0;
+		for (var i = lcRounds; i <= lcPerformance.length; i++) {
+			var currentString = lcPerformance.substring(i - lcRounds, i);
+			for (var c in currentString) {
+				if (currentString[c] === "F") {
+					break;
+				} else if (
+					parseInt(c) === currentString.length - 1 &&
+					currentString[c] === "P"
+				) {
+					selectedRounds++;
+				}
+			}
+			totalRounds++;
+		}
 
-		const totalQuestions = lcPerformance.length;
-		const passProbability = passes / totalQuestions;
-		const failProbability = 1 - passProbability;
-		const otherRoundsProbability = isPrepared ? 0.8 : 0.5;
-		const overallProbability =
-			passProbability ** 4 * otherRoundsProbability ** 2;
+		const otherRoundsProbability = isPrepared
+			? 0.8 ** otherRounds
+			: 0.5 ** otherRounds;
+		const lcprobability = selectedRounds / totalRounds;
+		const overallProbability = lcprobability * otherRoundsProbability;
+		setLCProbability(lcprobability.toFixed(4));
 		setProbability(overallProbability.toFixed(4));
-		setAttempts(Math.ceil(1 / (1 - overallProbability)));
+		setAttempts(Math.ceil(1 / (2 * overallProbability)));
 	};
 
 	return (
@@ -44,25 +55,25 @@ const GettingIntoBigTechReliably = () => {
 			<br />
 
 			<p>
-				Generally Big Tech focuses heavily on Algorithms compared to
-				Fundamentals, behavioural parts. So let's focus on that first.
-				I'm taking Google as an example. For SDE-2 role, they have 1
-				phone screen + 4 Onsite rounds all focused on Leetcode problems.
+				{" "}
+				You already know what these companies ask so I won't bore you
+				with the details. But broadly, Big Tech focuses heavily on
+				Algorithmic interviews. I'm taking Google as an example, For
+				SDE-2 role, they have 4 Leetcode + 1 Behavioural round.
 			</p>
 
 			<h2>Exercise</h2>
 
 			<ul>
 				<li>
-					Search for “Google Past interview experiences” on Google.
-					Pick an experience, it will generally be segmented like ,
-					Round 1, Round 2 etc. All rounds kind of have similar
-					difficulties so you can interchange them.
+					Search for “Past Google interview experiences". Pick an
+					experience, it will generally be segmented like Round 1,
+					Round 2 etc. All rounds kind of have similar difficulties so
+					you can interchange them.
 				</li>
 				<li>
-					Pretend you have an interviewer sitting in front of you.
-					Now, solve the questions given in a round in next 30-40
-					minutes.
+					Pretend there's an interviewer sitting in front of you. Now,
+					solve the questions given in a round in next 30-40 minutes.
 				</li>
 			</ul>
 			<br />
@@ -78,25 +89,32 @@ const GettingIntoBigTechReliably = () => {
 
 			<h4>Calculation</h4>
 
-			<p> Lets assume your results for last 5 attempts is PFFFF. </p>
-			<br />
-
 			<p>
-				So, you have a 20% probablity of solving a “Google” Question.
-				This means you have 1/5 * 1/5 * 1/5 * 1/5 * 1/5 = 1/3125
-				probablity of passing all rounds.
+				{" "}
+				Lets assume your results for last 5 attempts is PFFFF. Since
+				companies require you to pass every round. You have a 0%
+				probablity of clearing the interviews.{" "}
 			</p>
 			<br />
 
 			<p>
-				But this only 1 sample. Luckily you sample this for 2-6,
+				But this only 1 sample right? Luckily you sample this for 2-6,
 				3-7……15-20 and get somewhat reliable results.
 			</p>
-			<br />
 
 			<p>
-				I've added a small calculator at the end which determines the
-				probablity of passing the rounds.
+				Ex: Let's say your results are PFPPPFPPFPPPPPPFPFPFPPP.
+				<br />
+				There are 2 samples containing "PPPP" in total 18 samples. This
+				means you have 11% chance of clearing the interview.
+			</p>
+
+			<br />
+			<p>
+				Note that in above example, you had 16 "P"s and 7 "F"s. Meaning
+				you were passing 16/23 = 61% of interviews. But still you only
+				had 11% chance of getting selected. The key point here is that
+				you need consecutive wins not just higher percentage of them.
 			</p>
 			<br />
 
@@ -107,6 +125,12 @@ const GettingIntoBigTechReliably = () => {
 				interviewers mood a lot. I'd give a 50% chance with no
 				preparation and 80% chance with full preparation. You can
 				integrate these into calculations to get full results.
+			</p>
+			<br />
+
+			<p>
+				I've added a small calculator which makes it easy to do these
+				calculations.
 			</p>
 			<br />
 
@@ -186,28 +210,27 @@ const GettingIntoBigTechReliably = () => {
 					Results
 				</h3>
 				<p className=" mb-2">
+					Probability of Clearing Algorithm Rounds:{" "}
+					<span className="font-bold text-blue-500 underline">
+						{lcprobability}
+					</span>
+				</p>
+				<p className=" mb-2">
 					Probability of getting selected:{" "}
-					<span className="font-bold text-blue-500">
+					<span className="font-bold text-blue-500 underline">
 						{probability}
 					</span>
 				</p>
 				<p className="">
 					BigTech generally has a 6 months cooldown before you can
 					apply again, so it would take you{" "}
-					<span className="font-bold text-blue-500">
-						{attempts / 2}
+					<span className="font-bold text-blue-500 underline">
+						{attempts}
 					</span>{" "}
 					years to get selected.
 				</p>
 			</div>
 
-			<h2> Notes </h2>
-
-			<p>
-				Probability of getting selected in x attempts: 1 - q^n where q =
-				probability of not getting selected in a single attempt and n =
-				no of attempts
-			</p>
 			<br />
 			<br />
 			<br />
@@ -216,6 +239,8 @@ const GettingIntoBigTechReliably = () => {
 				Thanks for Reading!! Reach out to me prakhar897@gmail.com for
 				any queries.
 			</p>
+
+			<br />
 
 			<div className="ml-embedded" data-form="2hzNuN"></div>
 		</>

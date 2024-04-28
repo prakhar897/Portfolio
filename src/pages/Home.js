@@ -7,13 +7,13 @@ const Home = () => {
 			<Navbar />
 
 			<a
-				href="https://tubesearch.vercel.app/"
+				href="https://jsonfixer.com/"
 				target="_blank"
 				rel="noreferrer"
 				className="font-orbitron border py-4 rounded-3xl text-center grid place-items-center"
 			>
 				{" "}
-				Latest work = Tubesearch{" "}
+				Latest work = JsonFixer{" "}
 			</a>
 			<p className="mt-12">
 				Hi, I'm Prakhar, a developer who focuses on building web apps.
