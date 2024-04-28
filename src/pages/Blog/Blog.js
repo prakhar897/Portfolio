@@ -14,7 +14,7 @@ const Blog = () => {
 				</li> */}
 				<li>
 					<Link to="/blog/getting-into-big-tech-reliably">
-						Getting into Big Tech Reliably <b>[27 Apr 2024]</b>
+						Getting into Big Tech Reliably <b>[28 Apr 2024]</b>
 					</Link>
 				</li>
 				{/* <li>
