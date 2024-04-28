@@ -37,7 +37,7 @@ const Home = () => {
 				</a>
 				and
 				<a
-					href="https://prakgupta.com/Resume.pdf"
+					href="https://softwaredesign.ing/Resume.pdf"
 					target="_blank"
 					rel="noreferrer"
 				>
