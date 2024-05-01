@@ -25,6 +25,29 @@ const Projects = () => {
 			<Navbar />
 
 			<div className="border-b py-4">
+				<h2> JsonFixer </h2>
+
+				<h6>
+					<i> 20 Apr 2024 </i>
+				</h6>
+				<p> Fixes Broken JSONs.</p>
+				<br />
+
+				<ol>
+					<li>
+						{" "}
+						<a
+							href="https://jsonfixer.com/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							Demo
+						</a>{" "}
+					</li>
+				</ol>
+			</div>
+
+			<div className="border-b py-4">
 				<h2> TubeSearch </h2>
 
 				<h6>
@@ -37,7 +60,7 @@ const Projects = () => {
 					<li>
 						{" "}
 						<a
-							href="https://tubesearch.prakgupta.com/"
+							href="https://tubesearch.vercel.app/"
 							target="_blank"
 							rel="noreferrer"
 						>
