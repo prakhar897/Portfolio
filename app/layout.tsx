@@ -24,6 +24,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
+				<link rel="icon" href="/favicon.png" />
 				<link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
 				<meta name="author" content="Prakhar Gupta" />
 				<meta property="og:site_name" content="softwaredesign.ing" />
