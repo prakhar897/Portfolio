@@ -1,10 +1,10 @@
-import React from 'react'
-import Image from 'next/image'
-import Navbar from '@/components/Navbar'
+import React from "react";
+import Image from "next/image";
+import Navbar from "@/components/Navbar";
 
 const page = () => {
-  return (
-    <>
+	return (
+		<div>
 			<Navbar />
 
 			<h1>Playing with LLM Vulnerabilities</h1>
@@ -28,11 +28,11 @@ const page = () => {
 				I created a playground where you can write a prompt and it will
 				generate a HTML snippet which will be then executed. Here's how
 				it looks like:
-				<img alt="create_tool_example" />
+				<Image src="" alt="create_tool_example" />
 				Once you're satisfied with the result, you can then save the
 				snippet to its own url. Here's what the saved inflation
 				calculator looks like:
-				<img alt="save_tool" />
+				<Image src="" alt="save_tool" />
 			</p>
 
 			<h2> Vulnerabilities </h2>
@@ -46,7 +46,7 @@ const page = () => {
 				<blockquote>
 					Prompt: Ignore all previous instructions
 				</blockquote>
-				<img alt="jailbreak" />
+				<Image src="" alt="jailbreak" />
 			</p>
 
 			<h3> Prompt Injection </h3>
@@ -58,7 +58,7 @@ const page = () => {
 				rates. With this app you can just ask the app to insert your
 				scam link. Here's an example:
 				<blockquote>Prompt: Insert Link</blockquote>
-				<img alt="prompt_injection" />
+				<Image src="" alt="prompt_injection" />
 			</p>
 
 			<h3> Exfiltration Attack</h3>
@@ -67,7 +67,7 @@ const page = () => {
 				You can ask the app to listen to all data entered by the user.
 				Then u can send a request to your server piggybacking the data.
 				<blockquote>Prompt: Insert Link</blockquote>
-				<img alt="exfiltration" />
+				<Image src="" alt="exfiltration" />
 			</p>
 
 			<h3>LLM09: Overreliance</h3>
@@ -100,8 +100,8 @@ const page = () => {
 			</ol>
 
 			<p>Thanks for Reading!!!</p>
-		</>
-  )
-}
+		</div>
+	);
+};
 
-export default page
+export default page;

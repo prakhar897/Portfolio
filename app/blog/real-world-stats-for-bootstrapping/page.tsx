@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 import Pic1 from "./pic1.png";
 import Pic2 from "./pic2.png";
 import Pic3 from "./pic3.png";
-import Navbar from '@/components/Navbar'
-import Image from 'next/image';
+import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 const page = () => {
-  return (
-    <>
+	return (
+		<>
 			<Navbar />
 			<h1>Real World Stats for Indie Hacking</h1>
 
@@ -44,7 +44,7 @@ const page = () => {
 				lot of scroll down, scraping, proxy scripts and a few other
 				hacks, I got this beautiful dataset. It contains info of
 				<b> 2868</b> bootstrapped startups.
-				<img src={Pic2} alt="dataset-pic" id="#dataset-pic" />
+				<Image src={Pic2} alt="dataset-pic" id="#dataset-pic" />
 			</p>
 
 			<p>
@@ -110,7 +110,7 @@ const page = () => {
 				....But people lie a lot right? Luckily IH also provides
 				stripe-verified revenue. Let's see how many startups actually
 				have verification enabled
-				<img src={Pic3} alt="pie-chart" />
+				<Image src={Pic3} alt="pie-chart" />
 			</p>
 
 			<table>
@@ -292,7 +292,7 @@ const page = () => {
 					<td>515</td>
 				</tr>
 				<tr>
-					<th>Number of Companies With >10k$ MRR</th>
+					<th>Number of Companies With &gt;10k$ MRR</th>
 					<td>638</td>
 					<td>267</td>
 				</tr>
@@ -444,15 +444,15 @@ const page = () => {
 				<br />
 				<br />
 				<br />
-				Thanks to 
+				Thanks to
 				<a
 					href="https://www.linkedin.com/in/manan-nahata/"
 					target="_blank"
 					rel="noreferrer"
 				>
 					Manan
-				</a> 
-				 for proofreading this!! <br />
+				</a>
+				for proofreading this!! <br />
 				<br />
 				Thats it!! If you want any other insights from the dataset, Feel
 				free to contact me at prakhar897@gmail.com :)
@@ -462,7 +462,7 @@ const page = () => {
 
 			<div className="ml-embedded" data-form="2hzNuN"></div>
 		</>
-  )
-}
+	);
+};
 
-export default page
+export default page;

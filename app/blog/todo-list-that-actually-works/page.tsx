@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 import CoveyQuadrants from "./covey_quadrants.png";
 import Ex1 from "./ex1.jpeg";
 import Ex2 from "./ex2.jpg";
-import Image from 'next/image';
+import Image from "next/image";
 
-import Navbar from '@/components/Navbar';
+import Navbar from "@/components/Navbar";
 
 const page = () => {
-  return (
-    <>
+	return (
+		<>
 			<Navbar />
 			<h1>A TODO List that actually works</h1>
 
@@ -60,7 +60,7 @@ const page = () => {
 				<li>Not Important, Not Due Soon</li>
 			</ol>
 
-			<img src={CoveyQuadrants} alt="Covey Quadrants" />
+			<Image src={CoveyQuadrants} alt="Covey Quadrants" />
 
 			<p>
 				The strategy is to pick the tasks in the priorities given above.
@@ -91,7 +91,7 @@ const page = () => {
 				Consequence - Not being able to attend JS Conf.
 			</blockquote>
 
-			<img src={Ex1} alt="Example Task" />
+			<Image src={Ex1} alt="Example Task" />
 
 			<p>
 				It's Sunday night and I pick up this task. Then I play
@@ -101,7 +101,7 @@ const page = () => {
 				consequences of not doing this.
 			</p>
 
-			<img src={Ex2} alt="Task Comparisons" />
+			<Image src={Ex2} alt="Task Comparisons" />
 			<p>
 				This helps in keeping my priorities sorted. Not doing the day
 				job tasks have harsher consequences than this, so I'll naturally
@@ -147,7 +147,7 @@ const page = () => {
 				</li>
 			</ol>
 		</>
-  )
-}
+	);
+};
 
-export default page
+export default page;

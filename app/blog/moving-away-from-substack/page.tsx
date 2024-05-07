@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 
-const page = () => {
+const Page = () => {
 	useEffect(() => {
 		const script = document.createElement("script");
 		script.src =
@@ -19,7 +19,7 @@ const page = () => {
 				maxDepth: 5,
 			};
 
-			window.displayHNComments("38300167", rootElement, options);
+			(window as any).displayHNComments("38300167", rootElement, options);
 		};
 
 		document.body.appendChild(script);
@@ -136,4 +136,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Page;

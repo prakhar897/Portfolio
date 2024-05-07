@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 
-const page = () => {
+const Page = () => {
 	const [lcPerformance, setLcPerformance] = useState("PFPFFFPPFFFPPPPPFFFPF");
 	const [lcRounds, setLcRounds] = useState(4);
 	const [otherRounds, setOtherRounds] = useState(1);
@@ -16,7 +16,7 @@ const page = () => {
 		var totalRounds = 0;
 		var selectedRounds = 0;
 		for (var i = lcRounds; i <= lcPerformance.length; i++) {
-			var currentString = lcPerformance.substring(i - lcRounds, i);
+			var currentString: any = lcPerformance.substring(i - lcRounds, i);
 			for (var c in currentString) {
 				if (currentString[c] === "F") {
 					break;
@@ -33,8 +33,8 @@ const page = () => {
 		const otherRoundsProbability = isPrepared
 			? 0.8 ** otherRounds
 			: 0.5 ** otherRounds;
-		const lcprobability = selectedRounds / totalRounds;
-		const overallProbability = lcprobability * otherRoundsProbability;
+		const lcprobability: any = selectedRounds / totalRounds;
+		const overallProbability: any = lcprobability * otherRoundsProbability;
 		setLCProbability(lcprobability.toFixed(4));
 		setProbability(overallProbability.toFixed(4));
 		setAttempts(Math.ceil(1 / (2 * overallProbability)));
@@ -151,7 +151,7 @@ const page = () => {
 						type="text"
 						id="lcRounds"
 						value={lcRounds}
-						onChange={(e) => setLcRounds(e.target.value)}
+						onChange={(e) => setLcRounds(e.target.value as any)}
 						placeholder="4"
 						className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-white text-black"
 					/>
@@ -167,7 +167,7 @@ const page = () => {
 						type="text"
 						id="otherRounds"
 						value={otherRounds}
-						onChange={(e) => setOtherRounds(e.target.value)}
+						onChange={(e) => setOtherRounds(e.target.value as any)}
 						placeholder="4"
 						className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-white text-black"
 					/>
@@ -249,4 +249,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Page;

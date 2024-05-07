@@ -18,13 +18,17 @@ const HNCommentsDrawerDemo = () => {
 				maxDepth: 5,
 			};
 
-			window.displayHNComments("38300167", rootElement, options);
+			(window as any).displayHNComments("38300167", rootElement, options);
 
 			const rootElement2 = document.querySelector(
 				'[hn-story-id="38378455"]'
 			);
 
-			window.displayHNComments("38378455", rootElement2, options);
+			(window as any).displayHNComments(
+				"38378455",
+				rootElement2,
+				options
+			);
 		};
 
 		document.body.appendChild(script);
