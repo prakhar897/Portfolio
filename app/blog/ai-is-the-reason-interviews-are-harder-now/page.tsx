@@ -15,7 +15,7 @@ const page = () => {
 	return (
 		<>
 			<Navbar />
-			<h1>AI is the reason why interviews are harder now</h1>
+			<h1>AI is the reason interviews are harder now</h1>
 			<h6>
 				{" "}
 				<i> 15 May 2024 </i>{" "}
@@ -26,15 +26,15 @@ const page = () => {
 				dramatically increased.
 			</p>
 			<p>
-				In 2021, you were expected to solve DP, recursion, trees etc in
-				45 minutes. Which is tough in itself.
+				In 2021, you were expected to solve a question in
+				DP/recursion/trees etc in 45 minutes. which is tough by itself.
 			</p>
 			<p>
-				But in 2024, companies are giving Leetcode hards and asking you
-				to solve them in less than 30 minutes.
+				But in 2024, companies are giving leetcode hards and asking to
+				solve them in less than 30 minutes.
 			</p>
 
-			<h4> Example 1: </h4>
+			<h4> Example 1 [asked by a FAANG]: </h4>
 
 			<Image src={Pic2} alt="parallel-courses" />
 
@@ -43,13 +43,13 @@ const page = () => {
 				backtracking. (Maybe topological sorting too.)
 			</cite>
 
-			<h4> Example 2: </h4>
+			<h4> Example 2 [asked by Uber] : </h4>
 
 			<Image src={Pic1} alt="kenken-puzzle" />
 			<cite>
 				Here's what KenKen puzzle{" "}
 				<Link href="https://en.wikipedia.org/wiki/KenKen">wiki</Link>{" "}
-				looks like. Good luck doing in this half an hour!!
+				looks like. Good luck doing this in half an hour!!
 			</cite>
 
 			<h2> Who solves these Questions? </h2>
@@ -100,7 +100,7 @@ const page = () => {
 			<p> See for yourself:</p>
 			<Image src={Pic3} alt="blind-1" />
 			<Image src={Pic4} alt="blind-2" />
-			<h2> What does this mean for us actual studying peasants?</h2>
+			<h2> What does this mean for actual studying peasants</h2>
 			<p>
 				We would be continually outcompeted unless we start using these
 				tools. A true tragedy of commons.
@@ -125,14 +125,19 @@ const page = () => {
 				But using the above tools, or even just having some sort of
 				setup would make the issue much harder to spot.
 			</p>
-			<h2> Solution? </h2>
-			<p> Do the interviews in person. There's no other way.</p>
-			<h2> Should Employers care?</h2>
+
+			<h2> Solution </h2>
+			<p>
+				{" "}
+				<b>Do the interviews in person. There's no other way.</b>
+			</p>
+
+			<h2> Should Interviewers care</h2>
 			<p>
 				{" "}
 				<b>YES.</b> Because AI can't do all functions of a software
 				developer (yet). This means the phony guy you hire will have to
-				do them.
+				do them. and <b>you</b> have to oversee the activity.
 			</p>
 			<br />
 			<br />
