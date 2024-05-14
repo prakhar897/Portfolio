@@ -7,6 +7,13 @@ const page = () => {
 		<>
 			<Navbar />
 			<ul>
+				<li>
+					<Link href="/blog/ai-is-the-reason-why-interviews-are-harder-now">
+						AI is the reason why interviews are harder now{" "}
+						<b>[15 May 2024]</b>
+					</Link>
+				</li>
+
 				{/* <li>
 					<Link>
 						Why I created Json Fixer <b>[WIP]</b>
