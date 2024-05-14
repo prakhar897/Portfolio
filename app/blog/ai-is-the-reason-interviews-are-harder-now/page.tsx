@@ -48,7 +48,12 @@ const page = () => {
 			<Image src={Pic1} alt="kenken-puzzle" />
 			<cite>
 				Here's what KenKen puzzle{" "}
-				<Link href="https://en.wikipedia.org/wiki/KenKen">wiki</Link>{" "}
+				<Link
+					target="_blank"
+					href="https://en.wikipedia.org/wiki/KenKen"
+				>
+					wiki
+				</Link>{" "}
 				looks like. Good luck doing this in half an hour!!
 			</cite>
 
@@ -58,17 +63,25 @@ const page = () => {
 				Well ofcourse. It's the people using:
 				<ul>
 					<li>
-						<Link href="https://ultracode.ai/">Ultracode </Link>{" "}
+						<Link target="_blank" href="https://ultracode.ai/">
+							Ultracode{" "}
+						</Link>{" "}
 						<Image src={Pic5} alt="ultracode" />
 					</li>
 					<li>
-						<Link href="https://www.finalroundai.com/">
+						<Link
+							target="_blank"
+							href="https://www.finalroundai.com/"
+						>
 							Final Round AI{" "}
 						</Link>
 						<Image src={Pic6} alt="final-round" />
 					</li>
 					<li>
-						<Link href="https://github.com/leetcode-mafia/cheetah">
+						<Link
+							target="_blank"
+							href="https://github.com/leetcode-mafia/cheetah"
+						>
 							{" "}
 							Cheetah{" "}
 						</Link>
@@ -91,7 +104,10 @@ const page = () => {
 			<cite>
 				{" "}
 				38:20 in{" "}
-				<Link href={"https://www.youtube.com/watch?v=qJQQ-0BQNOc"}>
+				<Link
+					target="_blank"
+					href={"https://www.youtube.com/watch?v=qJQQ-0BQNOc"}
+				>
 					https://www.youtube.com/watch?v=qJQQ-0BQNOc
 				</Link>
 			</cite>
@@ -142,6 +158,12 @@ const page = () => {
 			<br />
 			<br />
 			<p>Thanks for Reading!!</p>
+
+			<br />
+			<br />
+			<br />
+			<br />
+
 			<div className="ml-embedded" data-form="2hzNuN"></div>
 		</>
 	);
