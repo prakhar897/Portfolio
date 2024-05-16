@@ -23,6 +23,10 @@
 	--font-montserrat: "Montserrat", sans-serif;
 }
 
+.font-orbitron {
+	font-family: var(--font-orbitron);
+}
+
 /* Set the background to a dark purple */
 body {
 	background-color: var(--background);

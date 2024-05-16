@@ -2,19 +2,10 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
-  return (
-    <main>
+	return (
+		<main>
 			<Navbar />
 
-			<a
-				href="https://jsonfixer.com/"
-				target="_blank"
-				rel="noreferrer"
-				className="font-orbitron border py-4 rounded-3xl text-center grid place-items-center"
-			>
-				{" "}
-				Latest work = JsonFixer{" "}
-			</a>
 			<p className="mt-12">
 				Hi, I'm Prakhar, a developer who focuses on building web apps.
 				In the initial years, I learnt how to create systems that are
@@ -54,5 +45,5 @@ export default function Home() {
 				about my work or to explore the possibility of working together.
 			</p>
 		</main>
-  );
+	);
 }
