@@ -21,8 +21,8 @@ const page = () => {
 				<i> 15 May 2024 </i>{" "}
 			</h6>
 			<p>
-				For the past few weeks, I've been prepping for interviews. One
-				thing that caught my eye was the difficulty of questions have
+				For past few weeks, I've been prepping for interviews. One thing
+				that caught my eye was the difficulty of questions have
 				dramatically increased.
 			</p>
 			<p>

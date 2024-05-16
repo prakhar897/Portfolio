@@ -13,7 +13,7 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
 	title: "Prakhar Gupta",
-	description: "Portfolio of Prakhar Gupta",
+	description: "Software Engineer, LITM",
 };
 
 export default function RootLayout({
@@ -29,6 +29,11 @@ export default function RootLayout({
 				<meta name="author" content="Prakhar Gupta" />
 				<meta property="og:site_name" content="softwaredesign.ing" />
 				<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+				<link
+					rel="icon"
+					href="%PUBLIC_URL%/favicon.png"
+					type="image/x-icon"
+				/>
 
 				<Script
 					async
