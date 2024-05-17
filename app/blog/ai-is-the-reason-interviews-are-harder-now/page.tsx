@@ -34,7 +34,7 @@ const page = () => {
 					{" "}
 					here
 				</Link>{" "}
-				if you want to use it.{" "}
+				if you want to use it when it's built.{" "}
 			</b>
 			<p>
 				For past few weeks, I've been prepping for interviews. One thing
