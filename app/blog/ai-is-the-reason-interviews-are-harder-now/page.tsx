@@ -25,7 +25,8 @@ const page = () => {
 
 			<b>
 				{" "}
-				Update: I'll try to build AI detection algorithm. Click{" "}
+				Update: I'm working on AI detection algorithms to detect
+				cheating. Click{" "}
 				<Link
 					target="_blank"
 					href="https://forms.gle/ZNRWyesL8zEeZ2Xa9"
