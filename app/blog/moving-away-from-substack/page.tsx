@@ -1,29 +1,8 @@
-"use client";
-
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "@/components/Navbar";
+import HNComments from "@/components/HNComments";
 
 const Page = () => {
-	useEffect(() => {
-		const script = document.createElement("script");
-		script.src =
-			"https://cdn.jsdelivr.net/gh/prakhar897/hn-comments-drawer@latest/src/script.js";
-		script.async = true;
-
-		script.onload = () => {
-			const rootElement = document.querySelector(
-				'[hn-story-id="38300167"]'
-			);
-
-			const options = {
-				maxDepth: 5,
-			};
-
-			(window as any).displayHNComments("38300167", rootElement, options);
-		};
-
-		document.body.appendChild(script);
-	}, []);
 	return (
 		<>
 			<Navbar />
@@ -127,11 +106,7 @@ const Page = () => {
 
 			<div className="ml-embedded" data-form="2hzNuN"></div>
 
-			<div
-				className="hn-comments-drawer"
-				hn-story-id="38300167"
-				hn-max-depth="10"
-			></div>
+			<HNComments hnStoryId="38300167" />
 		</>
 	);
 };

@@ -10,6 +10,7 @@ import Pic7 from "./pic7.jpeg";
 import Pic8 from "./pic8.webp";
 import Image from "next/image";
 import Link from "next/link";
+import HNComments from "@/components/HNComments";
 
 const page = () => {
 	return (
@@ -165,6 +166,8 @@ const page = () => {
 			<br />
 
 			<div className="ml-embedded" data-form="2hzNuN"></div>
+
+			<HNComments hnStoryId="40363135" />
 		</>
 	);
 };
