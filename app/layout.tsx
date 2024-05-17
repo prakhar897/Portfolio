@@ -24,11 +24,21 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
-				<link rel="icon" href="/favicon.png" />
-				<link rel="apple-touch-icon" href="/favicon.png" />
+				<link
+					rel="icon"
+					href="https://www.softwaredesign.ing/favicon.png"
+				/>
+				<link
+					rel="apple-touch-icon"
+					href="https://www.softwaredesign.ing/favicon.png"
+				/>
 
 				<link rel="manifest" href="/manifest.json" />
-				<link rel="icon" href="/favicon.png" type="image/x-icon" />
+				<link
+					rel="icon"
+					href="https://www.softwaredesign.ing/favicon.png"
+					type="image/x-icon"
+				/>
 				<meta property="og:title" content="Prakhar Gupta" />
 				<meta
 					property="og:description"
@@ -38,7 +48,10 @@ export default function RootLayout({
 				<meta property="og:site_name" content="softwaredesign.ing" />
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content="https://softwaredesign.ing" />
-				<meta property="og:image" content="/favicon.png" />
+				<meta
+					property="og:image"
+					content="https://www.softwaredesign.ing/favicon.png"
+				/>
 
 				<Script
 					async
