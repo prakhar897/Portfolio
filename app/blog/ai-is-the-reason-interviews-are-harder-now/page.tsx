@@ -16,11 +16,25 @@ const page = () => {
 	return (
 		<>
 			<Navbar />
+
 			<h1>AI is the reason interviews are harder now</h1>
 			<h6>
 				{" "}
 				<i> 15 May 2024 </i>{" "}
 			</h6>
+
+			<b>
+				{" "}
+				Update: I'll try to build AI detection algorithm. Click{" "}
+				<Link
+					target="_blank"
+					href="https://forms.gle/ZNRWyesL8zEeZ2Xa9"
+				>
+					{" "}
+					here
+				</Link>{" "}
+				if you want to use it.{" "}
+			</b>
 			<p>
 				For past few weeks, I've been prepping for interviews. One thing
 				that caught my eye was the difficulty of questions have
@@ -144,20 +158,8 @@ const page = () => {
 			</p>
 
 			<h2> Solution </h2>
-			<p>
-				{" "}
-				<b>Do the interviews in person. There's no other way.</b>
-				<b>
-					Update: I'm working on algorithms that can detect
-					AI-generated responses. These could analyze linguistic
-					patterns, code structure, and problem-solving methods that
-					are characteristic of AI-generated solutions. Enter your
-					<Link target="_blank" href="">
-						email
-					</Link>{" "}
-					here if you'd like to try it out{" "}
-				</b>
-			</p>
+
+			<b>Do the interviews in person. There's no other way.</b>
 
 			<h2> Should Interviewers care</h2>
 			<p>
