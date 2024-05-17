@@ -147,6 +147,16 @@ const page = () => {
 			<p>
 				{" "}
 				<b>Do the interviews in person. There's no other way.</b>
+				<b>
+					Update: I'm working on algorithms that can detect
+					AI-generated responses. These could analyze linguistic
+					patterns, code structure, and problem-solving methods that
+					are characteristic of AI-generated solutions. Enter your
+					<Link target="_blank" href="">
+						email
+					</Link>{" "}
+					here if you'd like to try it out{" "}
+				</b>
 			</p>
 
 			<h2> Should Interviewers care</h2>
