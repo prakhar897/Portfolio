@@ -23,19 +23,6 @@ const page = () => {
 				<i> 15 May 2024 </i>{" "}
 			</h6>
 
-			<b>
-				{" "}
-				Update: I'm working on AI detection algorithms to detect
-				cheating. Click{" "}
-				<Link
-					target="_blank"
-					href="https://forms.gle/ZNRWyesL8zEeZ2Xa9"
-				>
-					{" "}
-					here
-				</Link>{" "}
-				if you want to try it when it's done.{" "}
-			</b>
 			<p>
 				For past few weeks, I've been prepping for interviews. One thing
 				that caught my eye was the difficulty of questions have
