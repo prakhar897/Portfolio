@@ -4,6 +4,7 @@ import Pic2 from "./pic2.png";
 import Pic3 from "./pic3.png";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import Link from "next/link";
 
 const page = () => {
 	return (
@@ -48,7 +49,15 @@ const page = () => {
 			</p>
 
 			<p>
-				You can also visit
+				Here's the{" "}
+				<Link
+					href="https://github.com/prakhar897/indiehacker-scraped"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					github repository{" "}
+				</Link>
+				containing dataset and other artifacts. You can also visit
 				<a
 					href="https://www.indiehackers.com/product/pep"
 					target="_blank"
@@ -310,7 +319,8 @@ const page = () => {
 					target="_blank"
 					rel="noreferrer"
 				>
-					this lesson by Eddie Woo
+					{" "}
+					this lesson by Eddie Woo{" "}
 				</a>
 				to learn more on this.
 			</p>
@@ -367,34 +377,6 @@ const page = () => {
 				with my first startup.
 			</p>
 
-			<h2>Future TODOs</h2>
-			<p>There's a lot more that could've been done with this dataset.</p>
-			<ol>
-				<li>
-					Distribution check for "Self Reported" and "Stripe Verified"
-					Revenues.
-				</li>
-				<li>
-					I could've scraped revenue and visitors by time too to know
-					more details on how long it took to reach the 100$, 1000$,
-					10k$ milestone.
-				</li>
-				<li>
-					For B2C startups, it would've been interesting to see how
-					many visitors it takes to reach the 100$, 1000$, 10k$
-					milestone.
-				</li>
-				<li>
-					Better keyword analysis could've been done. I think I can
-					find areas which has low amount of startups and where almost
-					all the created startups are doing well.
-				</li>
-				<li>
-					A check for many startups are alive would've been great as
-					well.
-				</li>
-			</ol>
-
 			<h2>Results</h2>
 
 			<p>
@@ -423,6 +405,7 @@ const page = () => {
 					target="_blank"
 					rel="noreferrer"
 				>
+					{" "}
 					being suspicious of stories
 				</a>
 				. Particularly, DHH ran <b>37signals</b> for 5 years as a
@@ -435,6 +418,7 @@ const page = () => {
 					target="_blank"
 					rel="noreferrer"
 				>
+					{" "}
 					ladders of wealth creation
 				</a>
 				. DHH built himself a foundation that made it much easier for
@@ -450,7 +434,8 @@ const page = () => {
 					target="_blank"
 					rel="noreferrer"
 				>
-					Manan
+					{" "}
+					Manan{" "}
 				</a>
 				for proofreading this!! <br />
 				<br />
