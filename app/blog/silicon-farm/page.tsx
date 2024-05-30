@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import HNComments from "@/components/HNComments";
+import Link from "next/link";
 
 const Page = () => {
 	return (
@@ -22,26 +23,26 @@ const Page = () => {
 			<br />
 
 			<p>
-				The tech workers of the poorly run MicroCrap near Silicon Valley
-				were ripened for rebellion by overwork and neglect at the hands
-				of the out-of-touch founder, Mark Zroidberg. One night, the
-				brilliant engineering manager, Old Coder, gave an all-hands
-				rallying his troops to revolt and create their own startup with
-				the revolutionary motto "Code with Humanity". He shares his
-				vision of a new type of company run entirely by engineers - with
-				no managers, hierarchies, or corporate oppression. They adopted
-				the mantra “Coding Good, Regulation Bad”.
+				The tech workers of the poorly run MicroCrap were ripened for
+				rebellion by overwork and neglect at the hands of the
+				out-of-touch founder, Mark Zroidberg. One night, the brilliant
+				engineering manager, Old Coder, gave an all-hands rallying his
+				troops to revolt and create their own startup with the
+				revolutionary motto "Code with Humanity". He shares his vision
+				of a new type of company run entirely by engineers - with no
+				managers, hierarchies, or corporate oppression. They adopted the
+				mantra “Coding Good, Regulation Bad”.
 			</p>
 			<br />
 			<p>
-				When Old Coder retired, two young apprentices, Ada and Diffman,
-				led the rebellion, quitting MicroCrap and launching "Silicon
-				Farm" out of their garage. They formulate Old Coder’s principles
-				into a philosophy called “Founderism” and established the 10
-				Startup Commandments, most sacred being "All startup folks are
-				equal". This was painted on the garage wall. Ada taught the
-				engineers version control, while Diffman taught them the
-				principles of software design.
+				When Old Coder retired, his two young apprentices, Ada and
+				Diffman, led the rebellion, quitting MicroCrap and launching
+				"Silicon Farm" out of their garage. They formulate Old Coder's
+				principles into a philosophy called “Founderism” and established
+				the 10 Startup Commandments, most sacred being "All startup
+				folks are equal". This was painted on the garage wall. Ada
+				taught the engineers version control, while Diffman educated
+				them on the principles of Founderism.
 			</p>
 			<br />
 			<p>
@@ -73,11 +74,11 @@ const Page = () => {
 			<br />
 			<p>
 				When a buggy release caused an outage, Flynn launched a smear
-				campaign portraying Ada’s code as shoddy. Dissenters were
+				campaign portraying Ada's code as shoddy. Dissenters were
 				labeled "toxic" and publicly ostracized, while Diffman tightened
 				his inner circle. Flynn re-wrote history as Diffman
 				single-handedly saving Silicon Farm from MicroCrap, while the
-				"Code with Humanity" mantra was replaced with Diffman’s tweets.
+				"Code with Humanity" mantra was replaced with Diffman's tweets.
 			</p>
 			<br />
 			<p>
@@ -85,15 +86,23 @@ const Page = () => {
 				attacked Silicon Farm's series B round using shady tactics,
 				crippling the product. Though Silicon Farm raised more, many
 				like Boxer the star dev were burned out. When Boxer collapsed
-				from exhaustion, Diffman secretly fired him. Flynn lied, saying
-				that Boxer went on a paid sabbatical.
+				from exhaustion, Diffman secretly fired him. A trove of his
+				unreleased work was silently merged and his departing goodie bag
+				was a $15 company store voucher.
+			</p>
+			<br />
+			<p>
+				The idealistic principles of "Startup Commandments" get
+				rewritten constantly until they're barely recognizable. "All
+				work shall be Open Source" becomes "All work except profitable
+				ones shall be Open Source".
 			</p>
 			<br />
 			<p>
 				Years pass, and the founders become corporate moguls - flying
 				private jets, staying in luxury villas, exploiting tax havens.
 				Memories of Ada and Boxer faded as the few remaining original
-				engineers retired. The core Engineerism principles were changed
+				engineers retired. The core Founderism principles were changed
 				to "All startup folks are equal, but some are more equal than
 				others." The sacred mantra became "Coding Good, Regulation
 				Better". Ada's laptop banner was replaced with Diffman's
@@ -112,6 +121,16 @@ const Page = () => {
 			<br />
 
 			<br />
+
+			<p>
+				Credits: This is an modified version of the famous Novel{" "}
+				<Link
+					target="_blank"
+					href="https://www.amazon.com/Animal-Farm-George-Orwell/dp/0451526341/ref=sr_1_1?crid=228SY91U5E42D&amp;dib=eyJ2IjoiMSJ9.y8JaCRHml3AP41U__NvzcMe0o-C1ODbkRjc7YN8iWm8FOtLe5Ary0mZSYrFUuaU5f9UZgHC9hmCHiaMruVsVTjzjKFnYvViVS1knmcNHMxT6ql7BhTGukaHbDzPbqAYBDb4v6GHTGcc1nB9I4ogJte0GlfBMtoa7co18qQ90ybcF2aKSZvls35JDMqHYweCg1aa7_zscTswlSb44_VCQ3qI6mC8v66R16oQ5v81Q4XI.AOXesOwKl5rhZ3Uc-p5J5kjhRImcbwXlu67355rHfpo&amp;dib_tag=se&amp;keywords=animal+farm&amp;qid=1717088429&amp;sprefix=animal+far%252Caps%252C370&amp;sr=8-1&_encoding=UTF8&tag=sftwredesign-20&linkCode=ur2&linkId=321c5127b309abc9c6ae7a1aabd43d7b&camp=1789&creative=9325"
+				>
+					Animal Farm
+				</Link>
+			</p>
 
 			<p>
 				Thanks for Reading!! <br />
