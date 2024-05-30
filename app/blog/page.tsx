@@ -8,6 +8,11 @@ const page = () => {
 			<Navbar />
 			<ul>
 				<li>
+					<Link href="/blog/silicon-farm">
+						Silicon Farm <b>[30 May 2024]</b>
+					</Link>
+				</li>
+				<li>
 					<Link href="/blog/ai-is-the-reason-interviews-are-harder-now">
 						AI is the reason interviews are harder now{" "}
 						<b>[15 May 2024]</b>

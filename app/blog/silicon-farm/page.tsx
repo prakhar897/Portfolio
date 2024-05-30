@@ -10,15 +10,15 @@ const Page = () => {
 			<h1>Silicon Farm</h1>
 
 			<h6>
-				<i> 31 May 2024 </i>
+				<i> 30 May 2024 </i>
 			</h6>
 
-			<b>
+			<p>
 				[All characters appearing in this work are fictitious. Any
 				resemblance to real persons, living or dead, is purely
 				coincidental. All events portrayed in this story are imaginative
 				and do not depict or relate to real events.]
-			</b>
+			</p>
 			<br />
 			<br />
 
@@ -86,9 +86,8 @@ const Page = () => {
 				attacked Silicon Farm's series B round using shady tactics,
 				crippling the product. Though Silicon Farm raised more, many
 				like Boxer the star dev were burned out. When Boxer collapsed
-				from exhaustion, Diffman secretly fired him. A trove of his
-				unreleased work was silently merged and his departing goodie bag
-				was a $15 company store voucher.
+				from exhaustion, Diffman secretly fired him. His departing
+				goodie bag was a $15 company store voucher.
 			</p>
 			<br />
 			<p>
@@ -99,9 +98,9 @@ const Page = () => {
 				to "
 				<b>
 					All startup folks are equal, but some are more equal than
-					others
+					others.
 				</b>
-				". The sacred mantra became "Coding Good, Regulation Better".
+				" The sacred mantra became "Coding Good, Regulation Better".
 				Ada's laptop banner was replaced with Diffman's grinning
 				headshot.
 			</p>
@@ -120,7 +119,7 @@ const Page = () => {
 			<br />
 
 			<p>
-				<b>Credits</b>: This is an modified version of the famous Novel{" "}
+				<b>Credits:</b> This is an modified version of the famous novel{" "}
 				<Link
 					target="_blank"
 					href="https://www.amazon.com/Animal-Farm-George-Orwell/dp/0451526341/ref=sr_1_1?crid=228SY91U5E42D&amp;dib=eyJ2IjoiMSJ9.y8JaCRHml3AP41U__NvzcMe0o-C1ODbkRjc7YN8iWm8FOtLe5Ary0mZSYrFUuaU5f9UZgHC9hmCHiaMruVsVTjzjKFnYvViVS1knmcNHMxT6ql7BhTGukaHbDzPbqAYBDb4v6GHTGcc1nB9I4ogJte0GlfBMtoa7co18qQ90ybcF2aKSZvls35JDMqHYweCg1aa7_zscTswlSb44_VCQ3qI6mC8v66R16oQ5v81Q4XI.AOXesOwKl5rhZ3Uc-p5J5kjhRImcbwXlu67355rHfpo&amp;dib_tag=se&amp;keywords=animal+farm&amp;qid=1717088429&amp;sprefix=animal+far%252Caps%252C370&amp;sr=8-1&_encoding=UTF8&tag=sftwredesign-20&linkCode=ur2&linkId=321c5127b309abc9c6ae7a1aabd43d7b&camp=1789&creative=9325"
