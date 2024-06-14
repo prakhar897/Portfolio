@@ -18,7 +18,7 @@ const Navbar = () => {
 					Hire Me
 				</Link>
 			</div>
-			<a
+			{/* <a
 				href="https://jsonfixer.com/"
 				target="_blank"
 				rel="noreferrer"
@@ -26,7 +26,7 @@ const Navbar = () => {
 			>
 				{" "}
 				Latest work = JsonFixer{" "}
-			</a>
+			</a> */}
 		</>
 	);
 };

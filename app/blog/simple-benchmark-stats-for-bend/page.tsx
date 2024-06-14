@@ -6,10 +6,10 @@ const Page = () => {
 	return (
 		<>
 			<Navbar />
-			<h1>I Did some benchmarks on Bend</h1>
+			<h1>Some Crude Benchmarks for Bend</h1>
 
 			<h6>
-				<i> 28 May 2024 </i>
+				<i> 31 May 2024 </i>
 			</h6>
 
 			<p>
