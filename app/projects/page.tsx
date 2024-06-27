@@ -51,32 +51,6 @@ const Page = () => {
 
 			<div className="border p-4 mt-4 mb-4 rounded-2xl">
 				<a
-					href="https://jsonfixer.softwaredesign.ing/"
-					target="_blank"
-					rel="noreferrer"
-					className=""
-				>
-					<b className="text-4xl">jsonfixer.</b>softwaredesign.ing
-				</a>{" "}
-				<h6 className="mt-1">
-					<i> 20 Apr 2024 </i>
-				</h6>
-				<br />
-				<p>Fixes Broken JSONs.</p>
-				<br />
-				<button onClick={() => showHNComments("40030411")}>
-					{" "}
-					Show Comments on this project{" "}
-				</button>
-				<div
-					className="hn-comments-drawer"
-					hn-story-id="40030411"
-					hn-max-depth="10"
-				></div>
-			</div>
-
-			<div className="border p-4 mt-4 mb-4 rounded-2xl">
-				<a
 					href="https://github.com/prakhar897/hn-comments-drawer"
 					target="_blank"
 					rel="noreferrer"
@@ -100,6 +74,32 @@ const Page = () => {
 				<div
 					className="hn-comments-drawer"
 					hn-story-id="38597301"
+					hn-max-depth="10"
+				></div>
+			</div>
+
+			<div className="border p-4 mt-4 mb-4 rounded-2xl">
+				<a
+					href="https://jsonfixer.softwaredesign.ing/"
+					target="_blank"
+					rel="noreferrer"
+					className=""
+				>
+					<b className="text-4xl">jsonfixer.</b>softwaredesign.ing
+				</a>{" "}
+				<h6 className="mt-1">
+					<i> 20 Apr 2024 </i>
+				</h6>
+				<br />
+				<p>Fixes Broken JSONs.</p>
+				<br />
+				<button onClick={() => showHNComments("40030411")}>
+					{" "}
+					Show Comments{" "}
+				</button>
+				<div
+					className="hn-comments-drawer"
+					hn-story-id="40030411"
 					hn-max-depth="10"
 				></div>
 			</div>
