@@ -35,9 +35,9 @@ const Page = () => {
 					href="https://saibarsaiko.softwaredesign.ing/"
 					target="_blank"
 					rel="noreferrer"
-					className=""
+					className="text-2xl"
 				>
-					<b className="text-4xl">saibarsaiko.</b>softwaredesign.ing
+					saibarsaiko.softwaredesign.ing
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 26 Dec 2023 </i>
@@ -54,9 +54,9 @@ const Page = () => {
 					href="https://github.com/prakhar897/hn-comments-drawer"
 					target="_blank"
 					rel="noreferrer"
-					className=""
+					className="text-2xl"
 				>
-					<b className="text-4xl">HN Comments Drawer</b>
+					HN Comments Drawer
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 21 Nov 2023 </i>
@@ -83,9 +83,9 @@ const Page = () => {
 					href="https://jsonfixer.softwaredesign.ing/"
 					target="_blank"
 					rel="noreferrer"
-					className=""
+					className="text-2xl"
 				>
-					<b className="text-4xl">jsonfixer.</b>softwaredesign.ing
+					jsonfixer.softwaredesign.ing
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 20 Apr 2024 </i>
@@ -111,9 +111,9 @@ const Page = () => {
 					href="https://3-minute-test.softwaredesign.ing/"
 					target="_blank"
 					rel="noreferrer"
-					className=""
+					className="text-2xl"
 				>
-					<b className="text-4xl">3-minute-test.</b>softwaredesign.ing
+					3-minute-test.softwaredesign.ing
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 14 Jun 2024 </i>
@@ -128,9 +128,9 @@ const Page = () => {
 					href="https://tubesearch.softwaredesign.ing/"
 					target="_blank"
 					rel="noreferrer"
-					className=""
+					className="text-2xl"
 				>
-					<b className="text-4xl">tubesearch.</b>softwaredesign.ing
+					tubesearch.softwaredesign.ing
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 21 Jan 2024 </i>
@@ -145,9 +145,9 @@ const Page = () => {
 					href="https://li-quoridor.softwaredesign.ing/"
 					target="_blank"
 					rel="noreferrer"
-					className=""
+					className="text-2xl"
 				>
-					<b className="text-4xl">li-quoridor.</b>softwaredesign.ing
+					li-quoridor.softwaredesign.ing
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 10 Dec 2023 </i>
@@ -170,9 +170,9 @@ const Page = () => {
 					href="https://coldmessageai.softwaredesign.ing/"
 					target="_blank"
 					rel="noreferrer"
-					className=""
+					className="text-2xl"
 				>
-					<b className="text-4xl">coldmessageai.</b>softwaredesign.ing
+					coldmessageai.softwaredesign.ing
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 08 Sep 2023 </i>
@@ -212,9 +212,9 @@ const Page = () => {
 					href="https://botspotting.softwaredesign.ing/"
 					target="_blank"
 					rel="noreferrer"
-					className=""
+					className="text-2xl"
 				>
-					<b className="text-4xl">botspotting.</b>softwaredesign.ing
+					botspotting.softwaredesign.ing
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 08 Aug 2023 </i>
@@ -229,9 +229,9 @@ const Page = () => {
 					href="https://github.com/prakhar897/workaround-gpt"
 					target="_blank"
 					rel="noreferrer"
-					className=""
+					className="text-2xl"
 				>
-					<b className="text-4xl">WorkAround GPT [3000+ DAU]</b>
+					WorkAround GPT [3000+ DAU]
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 10 Jul 2023 </i>
@@ -280,8 +280,9 @@ const Page = () => {
 					href="https://flashcards.softwaredesign.ing/"
 					target="_blank"
 					rel="noreferrer"
+					className="text-2xl"
 				>
-					<b className="text-4xl">flashcards.</b>softwaredesign.ing
+					flashcards.softwaredesign.ing
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 10 Mar 2023 </i>
@@ -295,9 +296,9 @@ const Page = () => {
 				<a
 					href="https://github.com/prakhar897/diffudle"
 					rel="noreferrer"
-					className=""
+					className="text-2xl"
 				>
-					<b className="text-4xl">Diffudle</b>
+					Diffudle
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 17 Jan 2023 </i>
@@ -311,9 +312,9 @@ const Page = () => {
 				<a
 					href="https://headline-hero.glitch.me/"
 					rel="noreferrer"
-					className=""
+					className="text-2xl"
 				>
-					<b className="text-4xl">headlinehero.</b>glitch.me
+					headlinehero.glitch.me
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 02 Aug 2020 </i>
@@ -338,9 +339,9 @@ const Page = () => {
 				<a
 					href="https://node-saas.glitch.me/"
 					rel="noreferrer"
-					className=""
+					className="text-2xl"
 				>
-					<b className="text-4xl">node-saas.</b>glitch.me
+					node-saas.glitch.me
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 02 Mar 2020 </i>
