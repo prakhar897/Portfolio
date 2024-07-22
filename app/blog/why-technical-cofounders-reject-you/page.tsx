@@ -13,43 +13,38 @@ const page = () => {
 			<h6>
 				<i> 21 Jul 2024 </i>
 			</h6>
-
 			<p>
 				As a tech fellow, I've been to a lot of cofounder dates. I want
 				to share some perspective from the other side of the table.
 			</p>
-
 			<h2>Your requirements are insane</h2>
-
-			<p>
-				There's 27 million software engineers. Yep the math does work
-				out. Take the 27 million and start filtering:
-			</p>
+			<p>Here are the requirements quoted to me by the founders I met:</p>
 			<ul>
-				<li>is in your country </li>
+				<li>is in their country </li>
 				<li>has an engineering degree</li>
 				<li>capable of doing actual greenfield work</li>
-				<li>has worked in Faang and/or serious startups</li>
-				<li>is someone you can trust</li>
+				<li>has worked in FAANG and/or serious startups</li>
+				<li>is someone they can trust</li>
 				<li>has business acumen</li>
 				<li>is in a family position to do a start up</li>
 				<li>can manage a team </li>
-				<li>shares your passion</li>
+				<li>shares their passion</li>
 				<li>available immediately</li>
 				<li>works for free</li>
 			</ul>
 			<p>
-				If this “mythical” person does exist, why would they work with
-				you?
+				This is quite an insane list and I don't think any person on
+				this planet qualifies. And if this mythical person does exist,
+				why would they work with you?
 			</p>
-
 			<h2>You care about idea equity</h2>
 			<p>
 				A person has around 6000-7000 conscious thoughts per day.
 				Multiply this by the whole population over the last 10 years,
-				you have 189,000,000,000,000,000 thoughts. <br /> <br />
-				The chances that yours is unique is somewhat low. <br /> <br />
-				the value in a startup isn't the idea but the ability to execute
+				you have 189,000,000,000,000,000 ideas. <br /> <br />
+				So the chances that yours is unique is somewhat low. <br />{" "}
+				<br />
+				The value in a startup isn't the idea but the ability to execute
 				and build on that idea. For every very successful startup in X
 				space there were 10 more X's with the same general idea but that
 				failed to execute. <br /> <br />
@@ -65,29 +60,25 @@ const page = () => {
 				you have earned in a single thought. This would create distrust
 				and sabotage the startup from the very beginning. <br /> <br />
 			</p>
-
 			<h2>You don't bring anything to the table</h2>
 			<p>
-				Jordan Belfort made it by selling scams. Then he sold a movie to
-				rights, now he makes it by selling courses on how to sell scams.
-				a good salesman can be selling 10 different crap easily. You
-				need to show you are the one. <br /> <br />
-				If you can't sell yourself, how would u sell the product. Every
-				person who is recruited to join a business must be convinced
-				that he or she is going to get something out of the deal. I
-				should be hearing about how I just need to write some code for
-				an year, then I'll be cruising in my private yacht. <br />
+				Jordan Belfort made it by selling scams. Then he sold movie
+				rights of him selling scams. Now he makes it by selling courses
+				on how to sell scams. A good salesman can be selling 10
+				different crap easily. You need to show you are the one. <br />{" "}
 				<br />
+				Every person who is recruited must be convinced that he/she is
+				going to get something out of the deal. And you have to sell the
+				idea of the company to win labour. <br /> <br />
 				If you're a dentist, or a store manager, please understand,
 				those skills are irrelavant to this role. Maybe your experience
-				is a plus, but your primary current role will be selling. <br />
+				is a plus, but your primary current role will be selling.
 				<br /> <br />
 				There are no dentists in a NBA team. and there are no dentists
 				in a startup. <br /> <br />
 				<b>Build it, or sell it, there's no third seat on this ride.</b>
 				<br /> <br />
 			</p>
-
 			<h2>You're bootstrapping</h2>
 			<p>
 				People keep using the word “bootstrapping” like it's a cheat
@@ -99,43 +90,47 @@ const page = () => {
 				requires hard rejections which they want to avoid as much as
 				possible. <br /> <br />
 				If you can't sell even the whole enterprise, how would you sell
-				the individual products built by the company? <br /> <br />
-				Is it bootstrap if u sit around and ask others to do all the
+				the individual product\s built by the company? <br /> <br />
+				Is it bootstrap if you sit around and ask others to do all the
 				work. That's like me saying I want to construct a house, ask
 				someone else to build it for us and when asked for funds, just
 				say the magic word “bootstrap”. When the house is built, I'll
 				maybe sell it. Maybe not. <br /> <br />
 			</p>
-
 			<h2>You don't understand the risk imbalance</h2>
 			<p>
 				There is a lot of upfront risk that the technical co-founder
-				takes. He is the one putting all the time upfront for the
+				takes. They are the one putting all the time upfront before the
 				business co-founder does.
 				<br /> <br />
-				The Business Co-Founder essentially gets more leverage the more
-				work the Technical Co-Founder does -- because now there is
-				sunk-cost and a psychological shackle. The Technical Co-Founder
+				The business cofounder essentially gets more leverage the more
+				work the technical cofounder does -- because now there is
+				sunk-cost and a psychological shackle. The technical cofounder
 				just wants to be done with the build-out so the business can
-				proceed and make money -- but the Business Co-Founder has every
+				proceed and make money -- but the business cofounder has every
 				incentive to expand the MVP more and more since they are putting
 				in no effort (possibly have not quit their job either) and wants
 				more and more before the system can be sold.
 				<br /> <br />
-				The business co-founder needs to take equal amount of risk. That
-				means quitting their day job and either selling the product full
-				time or essentially putting all of the money that they earned
-				from the job into the company.
+				<b>
+					My family, health, and social circles would qualify as
+					assets and I'm definitely putting those on the line as an
+					engineer.
+				</b>
+				<br /> <br />
+				So, the business co-founder needs to take equal amount of risk.
+				That means quitting their day job and either selling the product
+				full time or essentially putting all of the money that they
+				earned from the job into the company.
 				<br /> <br />
 			</p>
-
 			<h2>Your Expectations are Insane</h2>
 			<Image src={Comic10xEngineers} alt="10x Engineer" />
 			<ul>
 				<li>Fast paced.</li>
 				<li>live and breathe work</li>
 				<li>
-					I don't want someone who's just in for the short-term
+					I don't want someone who's just in for the
 					money/stipend/certificate.
 				</li>
 				<li>Looking for Mountain movers.</li>
@@ -143,19 +138,10 @@ const page = () => {
 				<li>“game changing” idea</li>
 			</ul>
 			<p>
-				My family, health, and social circles would qualify as assets
-				and I'm definitely putting those on the line as an engineer.
+				I should be hearing about how I just need to write some code for
+				an year, then I'll be cruising in my private yacht. Instead all
+				people talk about is back-breaking work that I need to do.
 			</p>
-
-			<h2> You don't understand your competitors </h2>
-			<p>
-				You are not competing with other founders for technical people.
-				You're competing with companies. I can get 100K salary working
-				30 hours a week with good food, social life and overall general
-				happiness, or I could be working in your startup for 100 hours a
-				week with zero pay. Which one would you pick in this scenario?
-			</p>
-
 			<h2>But But…. Impact, 0-&gt;1</h2>
 			<blockquote>
 				From the ages of 19-21, I spent my time as a missionary for the
@@ -175,17 +161,21 @@ const page = () => {
 				calling. <br /> <br />
 				<cite> - Not Me</cite>
 			</blockquote>
-
+			<h2> You don't understand your competitors </h2>
+			<p>
+				You are not competing with other founders for technical people.
+				You're competing with companies. I can get 100K salary working
+				30 hours a week with good food, social life and overall general
+				happiness, or I could be working in your startup for 100 hours a
+				week with zero pay. What do you think a reasonable person would
+				pick?
+			</p>
 			<h2>How do I get a technical Cofounder?</h2>
-
 			<p>
 				So what you actually need to do is build a compelling case for a
 				technical cofounder to want to join you. You have to show that
-				you and your idea will succeed, and that it's inevitable. You
-				are on that exponential curve and anyone who joins you is bound
-				to reach greater heights.
+				you and your idea will succeed, and that it's inevitable.
 			</p>
-
 			<p>A compelling case to join you consists of two things:</p>
 			<ul>
 				<li>
@@ -199,15 +189,13 @@ const page = () => {
 					matter what.
 				</li>
 			</ul>
-
 			<p>
 				You should prove to the other party that this is happening and
 				the train is departing. They can have a ticket to the ride if
 				they join you right now.
 			</p>
-
-			<div className="ml-embedded" data-form="2hzNuN"></div>
-
+			<br /> <br />
+			<p> Thanks for Reading!!</p>
 			<h2>References</h2>
 			<ol>
 				<li>
@@ -236,6 +224,7 @@ const page = () => {
 					</a>
 				</li>
 			</ol>
+			<div className="ml-embedded" data-form="2hzNuN"></div>
 		</>
 	);
 };
