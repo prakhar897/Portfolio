@@ -4,6 +4,7 @@ import Comic10xEngineers from "./comic-10x-engineers.webp";
 import Image from "next/image";
 
 import Navbar from "@/components/Navbar";
+import HNComments from "@/components/HNComments";
 
 const page = () => {
 	return (
@@ -225,6 +226,7 @@ const page = () => {
 				</li>
 			</ol>
 			<div className="ml-embedded" data-form="2hzNuN"></div>
+			<HNComments hnStoryId="41034604" />
 		</>
 	);
 };
