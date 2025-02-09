@@ -2,6 +2,14 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import HNComments from "@/components/HNComments";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Moving Away from Substack",
+	description:
+		"A critical look at Substack and why self-hosting is a better alternative for independent writers seeking control over their content and audience.",
+};
+
 const Page = () => {
 	return (
 		<>

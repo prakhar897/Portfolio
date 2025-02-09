@@ -9,7 +9,13 @@ import Pic3 from "./pic3.webp";
 import Pic4 from "./pic4.webp";
 import Pic5 from "./pic5.webp";
 
-import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Envisioning a Future with GPT",
+	description:
+		"Exploring the transformative impact of GPT on writing, blogging, social media, cybersecurity, and politics, and the challenges it brings to the digital world.",
+};
 
 const page = () => {
 	return (

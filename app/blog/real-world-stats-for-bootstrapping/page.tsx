@@ -6,6 +6,14 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Real World Stats for Indie Hacking",
+	description:
+		"A deep dive into real-world indie hacking data, analyzing revenue distribution, startup trends, and success patterns. This study explores key insights from over 2,800 bootstrapped startups, debunking myths and revealing the truth about what works in the indie hacker space.",
+};
+
 const page = () => {
 	return (
 		<>

@@ -6,6 +6,14 @@ import Image from "next/image";
 
 import Navbar from "@/components/Navbar";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "A TODO List that actually works",
+	description:
+		"An honest breakdown of common TODO list methods and why they fail, along with a practical, consequence-based approach that actually works. Learn how to prioritize tasks effectively and avoid productivity traps.",
+};
+
 const page = () => {
 	return (
 		<>

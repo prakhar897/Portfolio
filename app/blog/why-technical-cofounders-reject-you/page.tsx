@@ -6,6 +6,14 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import HNComments from "@/components/HNComments";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Why technical cofounders reject you",
+	description:
+		"A deep dive into why technical cofounders often reject business founders, covering unrealistic expectations, equity concerns, and risk imbalances.",
+};
+
 const page = () => {
 	return (
 		<>

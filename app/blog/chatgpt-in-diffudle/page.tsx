@@ -1,14 +1,22 @@
-import React from 'react'
-import Navbar from '@/components/Navbar'
+import React from "react";
+import Navbar from "@/components/Navbar";
 
-import Cavemen from "./cavemen.jpg"
-import GPTResult from "./gptResult.png"
-import GPTText from "./gptText.png"
-import Image from 'next/image'
+import Cavemen from "./cavemen.jpg";
+import GPTResult from "./gptResult.png";
+import GPTText from "./gptText.png";
+import Image from "next/image";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "ChatGPT in Diffudle",
+	description:
+		"How I used ChatGPT to automate prompt generation for Diffudle, an AI art-based word game, saving time and enhancing image diversity.",
+};
 
 const page = () => {
-  return (
-    <>
+	return (
+		<>
 			<Navbar />
 			<h1>Using ChatGPT to Automate an AI Art Game</h1>
 
@@ -95,7 +103,7 @@ const page = () => {
 
 			<div className="ml-embedded" data-form="2hzNuN"></div>
 		</>
-  )
-}
+	);
+};
 
-export default page
+export default page;

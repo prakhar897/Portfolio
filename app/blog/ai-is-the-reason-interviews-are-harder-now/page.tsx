@@ -12,6 +12,14 @@ import Image from "next/image";
 import Link from "next/link";
 import HNComments from "@/components/HNComments";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "AI is the reason interviews are harder now",
+	description:
+		"A deep dive into how AI-powered coding assistants are making tech interviews significantly more difficult, pushing companies to raise the bar and candidates to adapt.",
+};
+
 const page = () => {
 	return (
 		<>
