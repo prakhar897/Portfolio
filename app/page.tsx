@@ -19,7 +19,7 @@ export default function Home() {
 			<p>
 				Here's my
 				<a
-					href="https://www.linkedin.com/in/prakhar897/"
+					href="https://www.linkedin.com/in/prkhrgpt/"
 					target="_blank"
 					rel="noreferrer"
 				>
