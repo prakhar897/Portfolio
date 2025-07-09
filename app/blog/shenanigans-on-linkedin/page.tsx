@@ -11,7 +11,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Shenanigans on LinkedIn",
+	title: "Shenanigans on linkedin",
 	description:
 		"A deep dive into how LinkedIn's Easy Apply, default follows, and phantom job posts are gamifying the job-hunting experience.",
 };
@@ -21,7 +21,7 @@ const page = () => {
 		<>
 			<Navbar />
 
-			<h1>Shenanigans on LinkedIn</h1>
+			<h1>Shenanigans on linkedin</h1>
 			<h6>
 				<i>9 July 2025</i>
 			</h6>

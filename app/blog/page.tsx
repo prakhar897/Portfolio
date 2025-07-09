@@ -9,7 +9,7 @@ const page = () => {
 			<ul>
 				<li>
 					<Link href="/blog/shenanigans-on-linkedin">
-						Shenanigans on LinkedIn <b>[9 Jul 2025]</b>
+						Shenanigans on linkedin <b>[9 Jul 2025]</b>
 					</Link>
 				</li>
 				<li>
