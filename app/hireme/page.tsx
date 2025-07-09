@@ -1,9 +1,9 @@
-import React from 'react'
-import Navbar from '@/components/Navbar'
+import React from "react";
+import Navbar from "@/components/Navbar";
 
 const page = () => {
-  return (
-    <>
+	return (
+		<>
 			<Navbar />
 
 			<blockquote>
@@ -62,7 +62,7 @@ const page = () => {
 				</a>
 			</p>
 		</>
-  )
-}
+	);
+};
 
-export default page
+export default page;

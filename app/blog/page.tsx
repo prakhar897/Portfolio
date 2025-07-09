@@ -8,6 +8,11 @@ const page = () => {
 			<Navbar />
 			<ul>
 				<li>
+					<Link href="/blog/shenanigans-on-linkedin">
+						Shenanigans on LinkedIn <b>[9 Jul 2025]</b>
+					</Link>
+				</li>
+				<li>
 					<Link href="/blog/why-technical-cofounders-reject-you">
 						Why technical cofounders reject you <b>[21 Jul 2024]</b>
 					</Link>
