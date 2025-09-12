@@ -49,15 +49,13 @@ const page = () => {
 			<br />
 
 			<p>
-				{" "}
 				If you're interested, then send mail at prakhar897@gmail.com or
-				book a meet
+				book a meet{" "}
 				<a
 					href="https://calendly.com/prakhar897/meet"
 					target="_blank"
 					rel="noreferrer"
 				>
-					{" "}
 					here
 				</a>
 			</p>

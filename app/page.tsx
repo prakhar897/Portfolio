@@ -17,31 +17,29 @@ export default function Home() {
 			<br />
 
 			<p>
-				Here's my
+				Here's my{" "}
 				<a
 					href="https://www.linkedin.com/in/prkhrgpt/"
 					target="_blank"
 					rel="noreferrer"
 				>
-					{" "}
-					LinkedIn{" "}
-				</a>
-				and
+					LinkedIn
+				</a>{" "}
+				and{" "}
 				<a
 					href="https://softwaredesign.ing/Resume.pdf"
 					target="_blank"
 					rel="noreferrer"
 				>
-					{" "}
-					CV{" "}
-				</a>
+					CV
+				</a>{" "}
 				to know more.
 			</p>
 			<br />
 			<p>
 				This site is a brain dump of everything I've learned from being
-				a software developer for the last 7 years. Check out the
-				<a href="./hireme"> Hire Me</a> page if you want to know more
+				a software developer for the last 7 years. Check out the{" "}
+				<a href="./hireme">Hire Me</a> page if you want to know more
 				about my work or to explore the possibility of working together.
 			</p>
 		</main>
