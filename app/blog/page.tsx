@@ -6,12 +6,8 @@ const page = () => {
 	return (
 		<>
 			<Navbar />
+			<h2>Pinned</h2>
 			<ul>
-				<li>
-					<Link href="/blog/shenanigans-on-linkedin">
-						Shenanigans on linkedin <b>[9 Jul 2025]</b>
-					</Link>
-				</li>
 				<li>
 					<Link href="/blog/why-technical-cofounders-reject-you">
 						Why technical cofounders reject you <b>[21 Jul 2024]</b>
@@ -28,6 +24,16 @@ const page = () => {
 				<li>
 					<Link href="/blog/moving-away-from-substack">
 						Moving Away from Substack <b>[17 Nov 2023]</b>
+					</Link>
+				</li>
+			</ul>
+
+			<h2>Other</h2>
+
+			<ul>
+				<li>
+					<Link href="/blog/shenanigans-on-linkedin">
+						Shenanigans on linkedin <b>[9 Jul 2025]</b>
 					</Link>
 				</li>
 

@@ -28,7 +28,7 @@ const Page = () => {
 		<>
 			<Navbar />
 
-			<h1> Pinned </h1>
+			<h2> Pinned </h2>
 
 			<div className="border p-4 mt-4 mb-4 rounded-2xl">
 				<a
@@ -104,7 +104,7 @@ const Page = () => {
 				></div>
 			</div>
 
-			<h1> Other </h1>
+			<h2> Other </h2>
 
 			<div className="border p-4 mt-4 mb-4 rounded-2xl">
 				<a
