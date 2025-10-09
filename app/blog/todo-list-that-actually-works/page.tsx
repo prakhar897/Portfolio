@@ -18,7 +18,7 @@ const page = () => {
 	return (
 		<>
 			<Navbar />
-			<h1>A TODO List that actually works</h1>
+			<h2>A TODO List that actually works</h2>
 
 			<h3>
 				<i> 07 Sep 2023 </i>

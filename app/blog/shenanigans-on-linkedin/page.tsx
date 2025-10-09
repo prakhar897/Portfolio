@@ -21,7 +21,7 @@ const page = () => {
 		<>
 			<Navbar />
 
-			<h1>Shenanigans on linkedin</h1>
+			<h2>Shenanigans on linkedin</h2>
 			<h6>
 				<i>9 July 2025</i>
 			</h6>

@@ -21,7 +21,7 @@ const page = () => {
 	return (
 		<>
 			<Navbar />
-			<h1>Envisioning a future with GPT</h1>
+			<h2>Envisioning a future with GPT</h2>
 
 			<h3>
 				<i> 16 Apr 2023 </i>

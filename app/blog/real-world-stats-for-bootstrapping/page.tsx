@@ -18,7 +18,7 @@ const page = () => {
 	return (
 		<>
 			<Navbar />
-			<h1>Real World Stats for Indie Hacking</h1>
+			<h2>Real World Stats for Indie Hacking</h2>
 
 			<h6>
 				<i> 19 Sep 2023 </i>

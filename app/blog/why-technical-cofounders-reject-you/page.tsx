@@ -18,7 +18,7 @@ const page = () => {
 	return (
 		<>
 			<Navbar />
-			<h1>Why technical cofounders reject you</h1>
+			<h2>Why technical cofounders reject you</h2>
 			<h6>
 				<i> 21 Jul 2024 </i>
 			</h6>

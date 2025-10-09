@@ -18,7 +18,7 @@ const page = () => {
 	return (
 		<>
 			<Navbar />
-			<h1>Using ChatGPT to Automate an AI Art Game</h1>
+			<h2>Using ChatGPT to Automate an AI Art Game</h2>
 
 			<p>
 				I created an AI Art based Wordle type game called

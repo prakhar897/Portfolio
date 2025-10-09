@@ -25,7 +25,7 @@ const page = () => {
 		<>
 			<Navbar />
 
-			<h1>AI is the reason interviews are harder now</h1>
+			<h2>AI is the reason interviews are harder now</h2>
 			<h6>
 				{" "}
 				<i> 15 May 2024 </i>{" "}

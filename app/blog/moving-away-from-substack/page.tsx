@@ -14,7 +14,7 @@ const Page = () => {
 	return (
 		<>
 			<Navbar />
-			<h1>Moving Away from Substack</h1>
+			<h2>Moving Away from Substack</h2>
 
 			<h6>
 				<i> 17 Nov 2023 </i>
