@@ -80,12 +80,12 @@ const Page = () => {
 
 			<div className="border p-4 mt-4 mb-4 rounded-2xl">
 				<a
-					href="https://jsonfixer.softwaredesign.ing/"
+					href="https://github.com/prakhar897/json-fixer"
 					target="_blank"
 					rel="noreferrer"
 					className="text-2xl"
 				>
-					jsonfixer.softwaredesign.ing
+					JsonFixer
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 20 Apr 2024 </i>
@@ -108,46 +108,12 @@ const Page = () => {
 
 			<div className="border p-4 mt-4 mb-4 rounded-2xl">
 				<a
-					href="https://3-minute-test.softwaredesign.ing/"
+					href="https://github.com/prakhar897/li-quoridor"
 					target="_blank"
 					rel="noreferrer"
 					className="text-2xl"
 				>
-					3-minute-test.softwaredesign.ing
-				</a>{" "}
-				<h6 className="mt-1">
-					<i> 14 Jun 2024 </i>
-				</h6>
-				<br />
-				<p>A test taken in 3 minutes.</p>
-				<br />
-			</div>
-
-			<div className="border p-4 mt-4 mb-4 rounded-2xl">
-				<a
-					href="https://tubesearch.softwaredesign.ing/"
-					target="_blank"
-					rel="noreferrer"
-					className="text-2xl"
-				>
-					tubesearch.softwaredesign.ing
-				</a>{" "}
-				<h6 className="mt-1">
-					<i> 21 Jan 2024 </i>
-				</h6>
-				<br />
-				<p>Advanced Filters for Youtube Channels.</p>
-				<br />
-			</div>
-
-			<div className="border p-4 mt-4 mb-4 rounded-2xl">
-				<a
-					href="https://li-quoridor.softwaredesign.ing/"
-					target="_blank"
-					rel="noreferrer"
-					className="text-2xl"
-				>
-					li-quoridor.softwaredesign.ing
+					Li-Quoridor
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 10 Dec 2023 </i>
@@ -155,14 +121,7 @@ const Page = () => {
 				<br />
 				<p>A freeBoard for the Game &quot;Quoridor&quot;.</p>
 				<br />
-				<a
-					href="https://github.com/prakhar897/li-quoridor"
-					target="_blank"
-					rel="noreferrer"
-				>
-					{" "}
-					Source Code{" "}
-				</a>{" "}
+				
 			</div>
 
 			<div className="border p-4 mt-4 mb-4 rounded-2xl">
@@ -205,23 +164,6 @@ const Page = () => {
 					{" "}
 					Extension YouTube Demo{" "}
 				</a>{" "}
-			</div>
-
-			<div className="border p-4 mt-4 mb-4 rounded-2xl">
-				<a
-					href="https://botspotting.softwaredesign.ing/"
-					target="_blank"
-					rel="noreferrer"
-					className="text-2xl"
-				>
-					botspotting.softwaredesign.ing
-				</a>{" "}
-				<h6 className="mt-1">
-					<i> 08 Aug 2023 </i>
-				</h6>
-				<br />
-				<p>An app to track and spot bots.</p>
-				<br />
 			</div>
 
 			<div className="border p-4 mt-4 mb-4 rounded-2xl">
@@ -277,23 +219,6 @@ const Page = () => {
 
 			<div className="border p-4 mt-4 mb-4 rounded-2xl">
 				<a
-					href="https://flashcards.softwaredesign.ing/"
-					target="_blank"
-					rel="noreferrer"
-					className="text-2xl"
-				>
-					flashcards.softwaredesign.ing
-				</a>{" "}
-				<h6 className="mt-1">
-					<i> 10 Mar 2023 </i>
-				</h6>
-				<br />
-				<p>A simple app to create and try out flashcards.</p>
-				<br />
-			</div>
-
-			<div className="border p-4 mt-4 mb-4 rounded-2xl">
-				<a
 					href="https://github.com/prakhar897/diffudle"
 					rel="noreferrer"
 					className="text-2xl"
@@ -333,36 +258,6 @@ const Page = () => {
 					{" "}
 					Source Code{" "}
 				</a>{" "}
-			</div>
-
-			<div className="border p-4 mt-4 mb-4 rounded-2xl">
-				<a
-					href="https://node-saas.glitch.me/"
-					rel="noreferrer"
-					className="text-2xl"
-				>
-					node-saas.glitch.me
-				</a>{" "}
-				<h6 className="mt-1">
-					<i> 02 Mar 2020 </i>
-				</h6>
-				<br />
-				<p>
-					Inspired By alecrocute's flaskSaas. I've noticed SaaS
-					bootstraps/boilerplates being sold upwards of $1,000 per
-					year and I think that's ridiculous. This project will be my
-					attempt to make a great starting point for your next big
-					business as easy and efficent as possible.
-				</p>
-				<br />
-				<a
-					href="https://github.com/prakhar897/nodeSaas"
-					target="_blank"
-					rel="noreferrer"
-				>
-					{" "}
-					Source Code{" "}
-				</a>
 			</div>
 		</>
 	);
