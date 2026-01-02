@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
-import Link from "next/link";
 
 const Page = () => {
 	const showHNComments = (hnStoryId: string) => {
