@@ -31,12 +31,12 @@ const Page = () => {
 
 			<div className="border p-4 mt-4 mb-4 rounded-2xl">
 				<a
-					href="https://saibarsaiko.softwaredesign.ing/"
+					href="https://saibarsaiko.vercel.app/"
 					target="_blank"
 					rel="noreferrer"
 					className="text-2xl"
 				>
-					saibarsaiko.softwaredesign.ing
+					saibarsaiko
 				</a>{" "}
 				<h6 className="mt-1">
 					<i> 26 Dec 2023 </i>
@@ -120,7 +120,6 @@ const Page = () => {
 				<br />
 				<p>A freeBoard for the Game &quot;Quoridor&quot;.</p>
 				<br />
-				
 			</div>
 
 			<div className="border p-4 mt-4 mb-4 rounded-2xl">
