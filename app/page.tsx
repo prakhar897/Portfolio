@@ -4,8 +4,6 @@ import NoticeBoard from "@/components/NoticeBoard";
 export default function Home() {
 	return (
 		<main>
-			<NoticeBoard />
-
 			<p className="mt-12">
 				Hi, I'm Prakhar, a developer who focuses on building web apps.
 				In the initial years, I learnt how to create systems that are

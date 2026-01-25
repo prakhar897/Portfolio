@@ -15,7 +15,7 @@ const page = () => {
 		<>
 			<h2>Doing the thing is doing the thing.</h2>
 			<h6>
-				<i>19 Jan 2026</i>
+				<i>25 Jan 2026</i>
 			</h6>
 
 			<br />
