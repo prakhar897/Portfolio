@@ -4,7 +4,10 @@ const Navbar = () => {
 	return (
 		<>
 			<div className="nav">
-				<h1 className="name-heading">Prakhar Gupta</h1>
+				<div className="nav-header">
+					<h1 className="name-heading">Prakhar Gupta</h1>
+				</div>
+
 				<Link href="/" className="nav-a">
 					Home
 				</Link>
@@ -18,15 +21,6 @@ const Navbar = () => {
 					Hire Me
 				</Link>
 			</div>
-			{/* <a
-				href="https://jsonfixer.com/"
-				target="_blank"
-				rel="noreferrer"
-				className="ml-0 mr-0 font-orbitron border py-4 rounded-2xl grid text-center place-items-center "
-			>
-				{" "}
-				Latest work = JsonFixer{" "}
-			</a> */}
 		</>
 	);
 };

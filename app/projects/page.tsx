@@ -1,11 +1,10 @@
 "use client";
 import React, { useEffect } from "react";
-import Navbar from "@/components/Navbar";
 
 const Page = () => {
 	const showHNComments = (hnStoryId: string) => {
 		const rootElement = document.querySelector(
-			`[hn-story-id="${hnStoryId}"]`
+			`[hn-story-id="${hnStoryId}"]`,
 		);
 
 		const options = {
@@ -25,8 +24,6 @@ const Page = () => {
 
 	return (
 		<>
-			<Navbar />
-
 			<h2> Pinned </h2>
 
 			<div className="border p-4 mt-4 mb-4 rounded-2xl">

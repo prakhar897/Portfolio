@@ -23,8 +23,6 @@ export const metadata: Metadata = {
 const page = () => {
 	return (
 		<>
-			<Navbar />
-
 			<h2>AI is the reason interviews are harder now</h2>
 			<h6>
 				{" "}

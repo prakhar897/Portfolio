@@ -20,7 +20,6 @@ export const metadata: Metadata = {
 const page = () => {
 	return (
 		<>
-			<Navbar />
 			<h2>Envisioning a future with GPT</h2>
 
 			<h3>

@@ -17,7 +17,6 @@ export const metadata: Metadata = {
 const page = () => {
 	return (
 		<>
-			<Navbar />
 			<h2>Why technical cofounders reject you</h2>
 			<h6>
 				<i> 21 Jul 2024 </i>

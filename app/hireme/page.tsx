@@ -1,11 +1,8 @@
 import React from "react";
-import Navbar from "@/components/Navbar";
 
 const page = () => {
 	return (
 		<>
-			<Navbar />
-
 			<blockquote>
 				Rent my brain to write code, design systems, give programming
 				advice or discover ways to optimize your startup / business.

@@ -19,8 +19,6 @@ export const metadata: Metadata = {
 const page = () => {
 	return (
 		<>
-			<Navbar />
-
 			<h2>Shenanigans on linkedin</h2>
 			<h6>
 				<i>9 July 2025</i>

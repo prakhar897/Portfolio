@@ -17,7 +17,6 @@ export const metadata: Metadata = {
 const page = () => {
 	return (
 		<>
-			<Navbar />
 			<h2>A TODO List that actually works</h2>
 
 			<h3>

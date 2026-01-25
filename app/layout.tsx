@@ -10,6 +10,8 @@ import {
 } from "./fonts";
 import "./globals.css";
 import Script from "next/script";
+import Navbar from "@/components/Navbar";
+import NoticeBoard from "@/components/NoticeBoard";
 
 export const metadata: Metadata = {
 	title: "Prakhar Gupta",
@@ -97,6 +99,8 @@ export default function RootLayout({
 			<body
 				className={`${montserrat.variable} ${archivoBlack.variable} ${dosis.variable} ${openSans.variable} ${shareTechMono.variable} ${orbitron.variable}`}
 			>
+				<Navbar />
+				<NoticeBoard />
 				{children}
 			</body>
 		</html>

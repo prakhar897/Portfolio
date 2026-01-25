@@ -17,7 +17,6 @@ export const metadata: Metadata = {
 const page = () => {
 	return (
 		<>
-			<Navbar />
 			<h2>Real World Stats for Indie Hacking</h2>
 
 			<h6>

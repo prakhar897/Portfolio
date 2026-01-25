@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
+import NoticeBoard from "@/components/NoticeBoard";
 
 export default function Home() {
 	return (
 		<main>
-			<Navbar />
+			<NoticeBoard />
 
 			<p className="mt-12">
 				Hi, I'm Prakhar, a developer who focuses on building web apps.

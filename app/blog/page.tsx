@@ -1,11 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
 
 const page = () => {
 	return (
 		<>
-			<Navbar />
 			<h2>Pinned</h2>
 			<ul>
 				<li>
@@ -31,6 +29,11 @@ const page = () => {
 			<h2>Other</h2>
 
 			<ul>
+				<li>
+					<Link href="/blog/doing-the-thing-is-doing-the-thing">
+						Doing the thing is doing the thing <b>[19 Jan 2026]</b>
+					</Link>
+				</li>
 				<li>
 					<Link href="/blog/shenanigans-on-linkedin">
 						Shenanigans on linkedin <b>[9 Jul 2025]</b>

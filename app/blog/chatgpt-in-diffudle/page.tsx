@@ -17,7 +17,6 @@ export const metadata: Metadata = {
 const page = () => {
 	return (
 		<>
-			<Navbar />
 			<h2>Using ChatGPT to Automate an AI Art Game</h2>
 
 			<p>

@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 const Page = () => {
 	return (
 		<>
-			<Navbar />
 			<h2>Moving Away from Substack</h2>
 
 			<h6>
