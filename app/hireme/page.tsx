@@ -17,7 +17,7 @@ const page = () => {
 				won't slow the team down later.
 			</p>
 
-			<h2>Contract engineering</h2>
+			<h6>Contract engineering</h6>
 
 			<p>
 				I work with teams on a contract basis to help ship and stabilize
@@ -27,14 +27,14 @@ const page = () => {
 				AWS.
 			</p>
 
-			<h2>Architecture & system design</h2>
+			<h6>Architecture & system design</h6>
 
 			<p>
 				I help teams think through scalability, performance, cost, and
 				technical risk early, before these become production issues.
 			</p>
 
-			<h2>Technical advice</h2>
+			<h6>Technical advice</h6>
 
 			<p>
 				For leadership teams and non-technical stakeholders, I provide

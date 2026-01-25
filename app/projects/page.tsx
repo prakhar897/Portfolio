@@ -28,6 +28,26 @@ const Page = () => {
 
 			<div className="border p-4 mt-4 mb-4 rounded-2xl">
 				<a
+					href="https://teqgame.softwaredesign.ing/"
+					target="_blank"
+					rel="noreferrer"
+					className="text-2xl"
+				>
+					TEQGame
+				</a>{" "}
+				<h6 className="mt-1">
+					<i> 26 Nov 2025 </i>
+				</h6>
+				<br />
+				<p>
+					That Escaleted Quickly - A party game where players answer
+					funny prompts and then vote on the best response.
+				</p>
+				<br />
+			</div>
+
+			<div className="border p-4 mt-4 mb-4 rounded-2xl">
+				<a
 					href="https://saibarsaiko.vercel.app/"
 					target="_blank"
 					rel="noreferrer"
