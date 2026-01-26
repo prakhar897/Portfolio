@@ -36,9 +36,8 @@ export default function Home() {
 			<br />
 			<p>
 				This site is a brain dump of everything I've learned from being
-				a software developer for the last 7 years. Check out the{" "}
-				<a href="./hireme">Hire Me</a> page if you want to know more
-				about my work or to explore the possibility of working together.
+				a software developer for the last 7 years. Feel free to contact
+				me at prakhar897@gmail.com 😀
 			</p>
 		</main>
 	);
