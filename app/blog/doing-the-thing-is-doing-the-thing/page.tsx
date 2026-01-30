@@ -142,7 +142,7 @@ const page = () => {
 
 			<div className="ml-embedded" data-form="2hzNuN"></div>
 
-			<HNComments hnStoryId="00000000" />
+			<HNComments hnStoryId="46776155" />
 		</>
 	);
 };

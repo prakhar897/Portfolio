@@ -7,6 +7,11 @@ const page = () => {
 			<h2>Pinned</h2>
 			<ul>
 				<li>
+					<Link href="/blog/doing-the-thing-is-doing-the-thing">
+						Doing the thing is doing the thing <b>[19 Jan 2026]</b>
+					</Link>
+				</li>
+				<li>
 					<Link href="/blog/why-technical-cofounders-reject-you">
 						Why technical cofounders reject you <b>[21 Jul 2024]</b>
 					</Link>
@@ -29,11 +34,6 @@ const page = () => {
 			<h2>Other</h2>
 
 			<ul>
-				<li>
-					<Link href="/blog/doing-the-thing-is-doing-the-thing">
-						Doing the thing is doing the thing <b>[19 Jan 2026]</b>
-					</Link>
-				</li>
 				<li>
 					<Link href="/blog/shenanigans-on-linkedin">
 						Shenanigans on linkedin <b>[9 Jul 2025]</b>

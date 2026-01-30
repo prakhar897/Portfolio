@@ -1,13 +1,16 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 interface HNCommentsProps {
 	hnStoryId: string;
 }
 
 const HNComments: React.FC<HNCommentsProps> = ({ hnStoryId }) => {
+	const initializedRef = useRef(false);
 	useEffect(() => {
+		if (initializedRef.current) return;
+		initializedRef.current = true;
 		const script = document.createElement("script");
 		script.src =
 			"https://cdn.jsdelivr.net/gh/prakhar897/hn-comments-drawer@latest/src/script.js";
@@ -15,7 +18,7 @@ const HNComments: React.FC<HNCommentsProps> = ({ hnStoryId }) => {
 
 		script.onload = () => {
 			const rootElement = document.querySelector(
-				`[hn-story-id="${hnStoryId}"]`
+				`[hn-story-id="${hnStoryId}"]`,
 			);
 
 			const options = {
