@@ -258,8 +258,15 @@ a:hover {
 	font-family: var(--font-main);
 }
 
+/* Nav links container - flexbox for clean wrapping */
+.nav-links {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
 .nav-a {
-	margin: 1rem;
+	margin: 0.5rem;
 	text-decoration: none;
 	font-family: var(--font-orbitron);
 	padding: 8px 12px;
@@ -267,6 +274,7 @@ a:hover {
 	border-radius: 3px;
 	background: var(--code-bg);
 	transition: all 0.2s ease;
+	display: inline-block;
 }
 
 .nav-a:hover {

@@ -8,18 +8,20 @@ const Navbar = () => {
 					<h1 className="name-heading">Prakhar Gupta</h1>
 				</div>
 
-				<Link href="/" className="nav-a">
-					Home
-				</Link>
-				<Link href="/blog" className="nav-a">
-					Blog
-				</Link>
-				<Link href="/projects" className="nav-a">
-					Projects
-				</Link>
-				<Link href="/talk-to-me" className="nav-a">
-					Talk to me
-				</Link>
+				<div className="nav-links">
+					<Link href="/" className="nav-a">
+						Home
+					</Link>
+					<Link href="/blog" className="nav-a">
+						Blog
+					</Link>
+					<Link href="/projects" className="nav-a">
+						Projects
+					</Link>
+					<Link href="/talk-to-me" className="nav-a">
+						Talk to me
+					</Link>
+				</div>
 			</div>
 		</>
 	);
