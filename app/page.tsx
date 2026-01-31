@@ -1,6 +1,3 @@
-import Image from "next/image";
-import NoticeBoard from "@/components/NoticeBoard";
-
 export default function Home() {
 	return (
 		<main>
@@ -36,8 +33,9 @@ export default function Home() {
 			<br />
 			<p>
 				This site is a brain dump of everything I've learned from being
-				a software developer for the last 7 years. Feel free to contact
-				me at prakhar897@gmail.com 😀
+				a software developer for the last 7 years. You're welcome to{" "}
+				<a href="/talk-to-me">talk to me</a> here, I read all messages
+				and reply reasonably 😄.
 			</p>
 		</main>
 	);
