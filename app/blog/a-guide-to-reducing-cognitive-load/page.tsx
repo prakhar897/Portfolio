@@ -20,8 +20,8 @@ const Page = () => {
 				I used to feel like my brain was full all the time. Over time, I
 				realized that the brain is good at thinking, not remembering.
 				Every time I relied on memory for routine tasks, it introduced
-				failure points. So the better approach I found is to offload
-				everything I possibly can.
+				failure points. So the better approach I found is to{" "}
+				<b>offload everything I possibly can</b>.
 			</p>
 			<br />
 
@@ -31,7 +31,7 @@ const Page = () => {
 				<li>Take supplements</li>
 				<li>Call parents / respond to someone you’ve been delaying</li>
 				<li>Take food out of the freezer</li>
-				<li>Join a meeting, with a 5-min pre-reminder</li>
+				<li>Join a meeting (with a 5-min pre-reminder)</li>
 				<li>Follow up on an email if no reply in 2 days</li>
 				<li>Check logs / dashboards at a fixed time</li>
 				<li>Check that random idea later</li>
@@ -39,13 +39,13 @@ const Page = () => {
 			<br />
 
 			<p>
-				The rule is: don't rely on memory for near-future tasks. The
+				The rule is: <b>don't rely on memory for any task</b>. The
 				moment I think "I need to do X before leaving in 30 minutes," I
 				set a reminder immediately. I don't trust myself to remember.
 				Holding that thought in my head without offloading it adds load.
 				My mind keeps revisiting it in the background to make sure it
-				doesn't slip away. My phone rings a lot. It's excessive, but I
-				don't miss things anymore.
+				doesn't slip away. Hence, My phone rings a lot. It's excessive,
+				but I don't miss things anymore.
 			</p>
 			<br />
 
@@ -72,7 +72,7 @@ const Page = () => {
 				constantly checking where I am. I used to check every 5 to 10
 				minutes: how far along am I, how much time is left? Now I can
 				focus on other things, knowing I won't miss my stop. I didn't
-				realize how much background stress that removes until it was
+				realize how much background stress this removes until it was
 				gone.
 			</p>
 			<br />
@@ -81,8 +81,9 @@ const Page = () => {
 				I also set a geofence just outside my house for things I need to
 				remember before leaving. Like carry charger etc. Forgetting one
 				item can easily create a 30-minute detour. Comparatively,
-				setting a reminder takes five seconds. So, one avoided mistake
-				pays for hundreds of alarms over time.
+				setting a reminder takes five seconds. So,{" "}
+				<b>one avoided mistake pays for hundreds of alarms over time</b>
+				.
 			</p>
 			<br />
 
@@ -127,7 +128,7 @@ const Page = () => {
 				Over time, I built a personal knowledge base. The number of
 				times I had to refigure something out or ask a coworker again
 				because I'd forgotten a detail is staggering. With this system,
-				I'm always on top of my work.
+				I always stay on top of my work.
 			</p>
 			<br />
 
@@ -156,15 +157,15 @@ const Page = () => {
 			<br />
 
 			<p>
-				Yes, there are security trade-offs. I accept them for the sake
-				of speed and reliability. The folder is compressed and protected
+				Yes there are security trade-offs. I accept them for the sake of
+				speed and reliability. The folder is compressed and protected
 				with a master password used only for this.
 			</p>
 			<br />
 
 			<p>
-				The upside was: documents always within reach when needed, no
-				dependence on physical copies, and nothing ever gets lost.
+				The upside was: <b>documents always within reach when needed</b>
+				, no dependence on physical copies, and nothing ever gets lost.
 			</p>
 			<br />
 
@@ -194,8 +195,8 @@ const Page = () => {
 			<p>
 				I realized I was too distracted too much of the time to make
 				meaningful progress. Unclear goals combined with constant
-				distractions make for a perfect quagmire. Cognitive load isn't
-				just tasks, It's also noise.
+				distractions make for a perfect quagmire.{" "}
+				<b>Cognitive load isn't just tasks, It's also noise.</b>
 			</p>
 			<br />
 
@@ -207,7 +208,7 @@ const Page = () => {
 				</li>
 				<li>
 					Enabled ad blockers across YouTube, Netflix, and the rest of
-					the internet,{" "}
+					the internet (
 					<a
 						href="https://brave.com/"
 						target="_blank"
@@ -223,6 +224,7 @@ const Page = () => {
 					>
 						uBlock Origin
 					</a>
+					)
 				</li>
 				<li>
 					Added{" "}
@@ -258,9 +260,12 @@ const Page = () => {
 				Why does this matter? Ads don't just annoy. They shape
 				preferences subconsciously. Repeated exposure builds
 				familiarity, and familiarity biases decisions. Removing ads
-				reduces that hidden influence. I now discover new brands only
-				through word of mouth from people I trust, though they too are
-				influenced by ads to some degree.
+				reduces that hidden influence.{" "}
+				<b>
+					I now discover new brands only through word of mouth from
+					people I trust
+				</b>
+				, though they too are influenced by ads to some degree.
 			</p>
 			<br />
 
@@ -277,22 +282,16 @@ const Page = () => {
 			<ul>
 				<li>Work-related groups</li>
 				<li>Immediate family chats</li>
-				<li>My reminders app</li>
+				<li>Reminders app :)</li>
 			</ul>
 			<br />
 
 			<h3>App Blockers</h3>
-			<p>
-				Modern apps are designed to maximize the amount of time you
-				spend on them.
-			</p>
-			<br />
 
 			<p>
-				So I don't rely on willpower. Instead I use app blockers to
+				I don't rely on willpower. Instead I use app blockers to
 				restrict access to the worst offenders. Either time-based limits
-				or full blocks during certain hours. If I try to open them, I
-				hit a wall.
+				or full blocks during certain hours.
 			</p>
 			<br />
 
@@ -305,7 +304,7 @@ const Page = () => {
 
 			<h3>LLM Revisions for Everything</h3>
 			<p>
-				Whenever I’m doing something even slightly non-trivial, I run it
+				Whenever I'm doing something even slightly non-trivial, I run it
 				through LLMs.
 			</p>
 			<br />
@@ -314,23 +313,14 @@ const Page = () => {
 				For example, if I'm going on a vacation, I'll just describe the
 				trip and ask what I might be missing. If I'm cooking something,
 				I'll ask what groceries I should order. The LLM gives me a list
-				I can cross-check against what I already have. If something's
-				missing, it tells me. I add it. That's it.
+				I can cross-check against what I already have.
 			</p>
 			<br />
 
 			<p>
 				It almost always catches one or two things I hadn't thought of.
-				Not because I'm careless, but because it's genuinely hard to
-				think of everything from scratch every time.
-			</p>
-			<br />
-
-			<p>
-				The value isn't in the obvious suggestions. It's in the edge
-				cases. The LLM has seen thousands of variations of whatever I'm
-				doing. I haven't. So it flags the thing I don't know I don't
-				know.
+				Because it's genuinely hard to think of everything from scratch
+				every time.
 			</p>
 			<br />
 
@@ -368,18 +358,19 @@ const Page = () => {
 			<br />
 
 			<p>
-				The key is making daily tasks deceptively simple. I don't need
-				to complete the 10-year goal, just the small daily task. After a
-				few months of this, I could see meaningful progress toward my
-				longer-term goals.
+				The key is <b>making daily tasks deceptively simple</b>. I don't
+				need to complete the 10-year goal, just the small daily task.
+				After a few months of this, I could see meaningful progress
+				toward my longer-term goals.
 			</p>
 			<br />
 
 			<p>
 				Writing goals down also matters. Thinking about them endlessly
-				just turns into daydreaming. Writing forces clarity and
-				accountability. and helps me stay grounded in the knowledge that
-				I'm actually moving forward every day.
+				just turns into daydreaming.{" "}
+				<b>Writing forces clarity and accountability</b>. and helps me
+				stay grounded in the knowledge that I'm actually moving forward
+				every day.
 			</p>
 			<br />
 			<br />
