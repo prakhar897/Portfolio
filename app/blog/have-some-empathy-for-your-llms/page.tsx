@@ -13,14 +13,14 @@ const Page = () => {
 			<h2>Have some empathy for your LLMs</h2>
 
 			<h6>
-				<i> 27 Mar 2026 </i>
+				<i> 15 Apr 2026 </i>
 			</h6>
 
 			<p>
-				My friend was working on a research document. Like most people,
-				she wanted things to be fast, so she took the task she was
-				given, pasted it directly into ChatGPT, and waited for the
-				result. When it came back, she immediately made a face.
+				I was observing my friend working on a research document. Like
+				most people, she wanted things to be fast, so she took the task
+				she was given, pasted it directly into ChatGPT, and waited for
+				the result. When it came back, she immediately made a face.
 				<br />
 				<br />
 				“This isn't what I wanted.”
@@ -30,7 +30,7 @@ const Page = () => {
 			<p>
 				That reaction made me curious. What did she actually want? So I
 				asked her to show me a few example documents she considered
-				good. That's when it became clear. Those documents had a very
+				good. Upon inspection, I found that the examples had a very
 				specific tone, style, and underlying intent. ChatGPT's response,
 				while correct on the surface, didn't come close to matching that
 				flavor.
@@ -38,10 +38,9 @@ const Page = () => {
 			<br />
 
 			<p>
-				And that's when it clicked: most non-technical users don't
-				really understand how LLMs work. They try them once, get a
-				generic output, decide it's useless, and move on. But the
-				problem wasn't the model. It was the process.
+				And I realized something, that most non-technical users don't
+				really understand how LLMs work. The problem wasn't the model, It
+				was the process.
 			</p>
 			<br />
 
@@ -50,36 +49,33 @@ const Page = () => {
 
 			<ul>
 				<li>
-					First, the research itself. The task required gathering
-					information from multiple scattered sources across the
-					internet. That step never happened.
+					Research: The task required gathering information from
+					multiple scattered sources across the internet. That step
+					never happened.
 				</li>
 				<li>
-					Second, synthesis. Even with the right data, turning raw
-					information into a high-quality document is a separate
-					skill. A pitch deck, product analysis, or strategy memo each
-					has its own structure and intent.
+					Synthesis: Even with the right data, turning raw information
+					into a high-quality document is a separate skill. A pitch
+					deck, product analysis, or strategy memo each has its own
+					structure and intent.
 				</li>
-				<li>Third, and most importantly, the implicit expectation.</li>
+				<li>
+					Implicit Expectation: When a manager says “write a research
+					document,” they're not just asking for information. They
+					assume you understand the broader goal, the target audience,
+					the tone, and what “good” looks like. We Humans can infer
+					this naturally but LLMs can't. They can't read your mind,
+					sense dissatisfaction, or pick up on subtle cues. If you
+					don't explicitly tell them what you want, they fall back to a
+					safe, generic style, which is rarely what you actually need.
+				</li>
 			</ul>
 			<br />
 
 			<p>
-				When a manager says “write a research document,” they're not
-				just asking for information. They assume you understand the
-				broader goal, the target audience, the tone, and what “good”
-				looks like. Humans infer this naturally. LLMs don't. They can't
-				read your mind, sense dissatisfaction, or pick up on subtle
-				cues. If you don't explicitly tell them what you want, they fall
-				back to a safe, generic style, which is rarely what you actually
-				need.
-			</p>
-			<br />
-
-			<p>
-				So the real takeaway is simple: break your work into smaller,
+				So the real takeaway is: break your work into smaller,
 				explicit tasks. You don't even need to know how to do this
-				perfectly.
+				perfectly. Here's the workflow I recommend to everyone.
 			</p>
 			<br />
 
@@ -110,14 +106,14 @@ const Page = () => {
 			<br />
 
 			<p>
-				This led me to a broader idea: “Please have some empathy for
-				your LLMs.” Empathy here doesn't mean emotion. It means
-				understanding constraints. They are not mind readers, they don't
-				see context unless you provide it, and they don't understand
-				intent unless you articulate it. If you treat them like a black
-				box that should “just get it,” you'll be disappointed. You need
-				to provide them context, clarity, examples and direction, to get
-				a good output.
+				And that's why I want to say, “Please have some empathy for your
+				LLMs.” Empathy here doesn't mean emotion. It means understanding
+				constraints. They are not mind readers, they don't see context
+				unless you provide it, and they don't understand intent unless
+				you articulate it. If you treat them like a black box that
+				should “just get it,” you'll be disappointed. You need to
+				provide them context, clarity, examples and direction, to get a
+				good output.
 			</p>
 			<br />
 

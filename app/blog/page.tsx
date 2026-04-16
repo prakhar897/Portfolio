@@ -35,8 +35,14 @@ const page = () => {
 
 			<ul>
 				<li>
+					<Link href="/blog/a-guide-to-reducing-cognitive-load">
+						A Guide to Reducing Cognitive Load <b>[16 Apr 2026]</b>
+					</Link>
+				</li>
+
+				<li>
 					<Link href="/blog/have-some-empathy-for-your-llms">
-						Have some empathy for your LLMs <b>[27 Mar 2026]</b>
+						Have some empathy for your LLMs <b>[15 Apr 2026]</b>
 					</Link>
 				</li>
 
