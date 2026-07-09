@@ -3,8 +3,14 @@ const NoticeBoard = () => {
 		<div className="notice-board">
 			<span className="notice-icon">📢</span>
 			<p className="notice-text">
-				<span className="notice-label">NOTICE:</span> Open to full-time
-				and contract opportunities
+				<span className="notice-label">LATEST WORK:</span>
+				<a
+					href="/blog/a-guide-to-reducing-cognitive-load"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					A Guide to Reducing Cognitive Load
+				</a>
 			</p>
 		</div>
 	);
