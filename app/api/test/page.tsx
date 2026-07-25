@@ -1,5 +1,5 @@
 const response = {
-	status: "0k",
+	status: "Ok",
 	message: "Hello World",
 };
 
