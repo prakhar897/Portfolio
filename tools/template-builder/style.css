@@ -1,0 +1,32 @@
+.template-row {
+	display: grid;
+	grid-template-columns: 180px 320px 1fr;
+	align-items: center;
+	gap: 12px;
+	padding: 6px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.template-name {
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.template-inputs {
+	display: flex;
+	gap: 6px;
+	flex-wrap: wrap;
+}
+
+.template-inputs input {
+	width: 90px;
+	padding: 4px 6px;
+	font-size: 13px;
+}
+
+.template-output {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #555;
+}

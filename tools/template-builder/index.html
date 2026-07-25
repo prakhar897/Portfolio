@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Template Builder</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Template Builder</h1>
+
+			<nav>
+				<button class="nav active">Templates</button>
+				<button class="nav">About</button>
+			</nav>
+		</header>
+
+		<main>
+			<div id="templates">
+				<!-- Example Row -->
+				<div class="template-row">
+					<div class="template-name">Greeting Email</div>
+
+					<div class="template-inputs">
+						<input placeholder="name" />
+						<input placeholder="company" />
+					</div>
+
+					<div class="template-output">
+						Hello John, welcome to OpenAI...
+					</div>
+				</div>
+
+				<div class="template-row">
+					<div class="template-name">Invoice</div>
+
+					<div class="template-inputs">
+						<input placeholder="invoice" />
+						<input placeholder="amount" />
+					</div>
+
+					<div class="template-output">Invoice #1023 for ₹2,500</div>
+				</div>
+
+				<div class="template-row">
+					<div class="template-name">Meeting</div>
+
+					<div class="template-inputs">
+						<input placeholder="person" />
+						<input placeholder="date" />
+					</div>
+
+					<div class="template-output">
+						Meeting with Alex on Monday
+					</div>
+				</div>
+
+				<div class="template-row">
+					<div class="template-name">Offer Letter</div>
+
+					<div class="template-inputs">
+						<input placeholder="name" />
+						<input placeholder="role" />
+					</div>
+
+					<div class="template-output">
+						Dear John, we're pleased to offer you the position...
+					</div>
+				</div>
+
+				<div class="template-row">
+					<div class="template-name">Password Reset</div>
+
+					<div class="template-inputs">
+						<input placeholder="email" />
+					</div>
+
+					<div class="template-output">
+						Password reset link sent to john@example.com
+					</div>
+				</div>
+			</div>
+
+			<button id="newTemplateBtn">+ Build New Template</button>
+		</main>
+
+		<footer>
+			Templates are stored locally in your browser using Local Storage.
+			They will be lost if browser storage is cleared.
+		</footer>
+	</body>
+</html>
