@@ -23,29 +23,42 @@ if (!Array.isArray(templates)) {
 }
 
 const container = document.getElementById("templates");
+const newTemplateBtn = document.getElementById("newTemplateBtn");
+const templateForm = document.getElementById("templateForm");
+const templateName = document.getElementById("templateName");
+const templateCommand = document.getElementById("templateCommand");
+const cancelTemplateBtn = document.getElementById("cancelTemplateBtn");
 
 if (container) {
 	render();
 }
 
-document.getElementById("newTemplateBtn")?.addEventListener("click", () => {
-	const name = prompt("Template name");
+newTemplateBtn?.addEventListener("click", () => {
+	if (!templateForm) return;
 
-	if (!name) return;
+	templateForm.hidden = false;
+	newTemplateBtn.hidden = true;
+	templateName?.focus();
+});
 
-	const template = prompt(
-		"Template\n\nExample:\nHello {{name}}, welcome to {{company}}.",
-	);
+cancelTemplateBtn?.addEventListener("click", () => {
+	hideTemplateForm();
+});
 
-	if (!template) return;
+templateForm?.addEventListener("submit", (event) => {
+	event.preventDefault();
 
-	templates.push({
-		name,
-		template,
-	});
+	if (!templateName || !templateCommand) return;
 
+	const name = templateName.value.trim();
+	const template = templateCommand.value.trim();
+
+	if (!name || !template) return;
+
+	templates.push({ name, template });
 	save();
 	render();
+	hideTemplateForm();
 });
 
 function save() {
@@ -94,7 +107,7 @@ function render() {
 
 		const placeholders = [
 			...new Set(
-				[...template.template.matchAll(/{{(.*?)}}/g)].map((x) => x[1]),
+				[...template.template.matchAll(/{{(.*?)}}/g)].map((x) => x[1].trim()),
 			),
 		];
 
@@ -116,7 +129,10 @@ function render() {
 			let result = template.template;
 
 			placeholders.forEach((ph) => {
-				result = result.replaceAll("{{" + ph + "}}", values[ph] || "");
+				result = result.replace(
+					new RegExp("{{\\s*" + escapeRegExp(ph) + "\\s*}}", "g"),
+					values[ph] || "",
+				);
 			});
 
 			output.textContent = result;
@@ -158,6 +174,21 @@ function processValue(ph, value) {
 	}
 
 	return value;
+}
+
+function escapeRegExp(value) {
+	return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function hideTemplateForm() {
+	if (!templateForm) return;
+
+	templateForm.reset();
+	templateForm.hidden = true;
+
+	if (newTemplateBtn) {
+		newTemplateBtn.hidden = false;
+	}
 }
 
 async function copyText(text) {

@@ -10,11 +10,6 @@
 	<body>
 		<header>
 			<h1>Template Builder</h1>
-
-			<nav>
-				<button class="nav active">Templates</button>
-				<button class="nav">About</button>
-			</nav>
 		</header>
 
 		<main>
@@ -84,6 +79,34 @@
 			</div>
 
 			<button id="newTemplateBtn">+ Build New Template</button>
+
+			<form id="templateForm" class="template-form" hidden>
+				<label>
+					Name
+					<input
+						id="templateName"
+						name="name"
+						autocomplete="off"
+						placeholder="Template name"
+						required
+					/>
+				</label>
+
+				<label>
+					Command
+					<textarea
+						id="templateCommand"
+						name="command"
+						placeholder="Type your command with {{variables}}"
+						required
+					></textarea>
+				</label>
+
+				<div class="form-actions">
+					<button type="submit">Save Template</button>
+					<button type="button" id="cancelTemplateBtn">Cancel</button>
+				</div>
+			</form>
 		</main>
 
 		<footer>

@@ -45,3 +45,43 @@
 .copy-btn:hover {
 	background: #f7f7f7;
 }
+
+.template-form {
+	display: grid;
+	gap: 10px;
+	margin-top: 16px;
+	padding: 14px;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+	background: #fafafa;
+}
+
+.template-form[hidden] {
+	display: none;
+}
+
+.template-form label {
+	display: grid;
+	gap: 5px;
+	font-weight: 600;
+}
+
+.template-form input,
+.template-form textarea {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 8px 10px;
+	border: 1px solid #d8d8d8;
+	border-radius: 6px;
+	font: inherit;
+}
+
+.template-form textarea {
+	min-height: 92px;
+	resize: vertical;
+}
+
+.form-actions {
+	display: flex;
+	gap: 8px;
+}
