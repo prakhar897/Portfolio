@@ -82,7 +82,7 @@ function render() {
 
 	container.innerHTML = "";
 
-	templates.forEach((template) => {
+	templates.forEach((template, index) => {
 		const row = document.createElement("div");
 		row.className = "template-row";
 
@@ -95,19 +95,25 @@ function render() {
 
 		const output = document.createElement("div");
 		output.className = "template-output";
+		output.tabIndex = 0;
+		output.setAttribute("role", "button");
+		output.setAttribute("aria-label", `Copy ${template.name} output`);
+		output.title = "Click to copy";
 
-		const copy = document.createElement("button");
-		copy.className = "copy-btn";
-		copy.type = "button";
-		copy.textContent = "📋";
-		copy.setAttribute("aria-label", `Copy ${template.name} output`);
-		copy.title = "Copy";
+		const remove = document.createElement("button");
+		remove.className = "delete-btn";
+		remove.type = "button";
+		remove.textContent = "🗑️";
+		remove.setAttribute("aria-label", `Delete ${template.name}`);
+		remove.title = "Delete";
 
 		const values = {};
 
 		const placeholders = [
 			...new Set(
-				[...template.template.matchAll(/{{(.*?)}}/g)].map((x) => x[1].trim()),
+				[...template.template.matchAll(/{{(.*?)}}/g)]
+					.map((x) => x[1].trim())
+					.filter((ph) => !isBuiltInValue(ph)),
 			),
 		];
 
@@ -126,7 +132,7 @@ function render() {
 		});
 
 		function update() {
-			let result = template.template;
+			let result = applyBuiltInValues(template.template);
 
 			placeholders.forEach((ph) => {
 				result = result.replace(
@@ -135,32 +141,37 @@ function render() {
 				);
 			});
 
-			output.textContent = result;
+			output.textContent = applyEvalExpressions(result);
 		}
 
-		copy.addEventListener("click", async () => {
+		output.addEventListener("click", async () => {
 			await copyText(output.textContent);
+			showCopied(output);
+		});
 
-			copy.textContent = "✅";
+		output.addEventListener("keydown", async (event) => {
+			if (event.key !== "Enter" && event.key !== " ") return;
 
-			setTimeout(() => {
-				copy.textContent = "📋";
-			}, 1000);
+			event.preventDefault();
+			await copyText(output.textContent);
+			showCopied(output);
+		});
+
+		remove.addEventListener("click", () => {
+			templates.splice(index, 1);
+			save();
+			render();
 		});
 
 		update();
 
-		row.append(name, inputs, copy, output);
+		row.append(remove, name, inputs, output);
 
 		container.appendChild(row);
 	});
 }
 
 function processValue(ph, value) {
-	if (ph === "date") return value || new Date().toLocaleDateString();
-
-	if (ph === "datetime") return value || new Date().toLocaleString();
-
 	if (ph.startsWith("upper:")) return value.toUpperCase();
 
 	if (ph.startsWith("lower:")) return value.toLowerCase();
@@ -176,6 +187,77 @@ function processValue(ph, value) {
 	return value;
 }
 
+function isBuiltInValue(value) {
+	return ["date", "time", "datetime", "timestamp"].includes(value);
+}
+
+function applyBuiltInValues(template) {
+	const now = new Date();
+	const values = {
+		date: now.toLocaleDateString(),
+		time: now.toLocaleTimeString(),
+		datetime: now.toLocaleString(),
+		timestamp: String(now.getTime()),
+	};
+
+	return Object.entries(values).reduce(
+		(result, [key, value]) =>
+			result.replace(
+				new RegExp("{{\\s*" + key + "\\s*}}", "g"),
+				value,
+			),
+		template,
+	);
+}
+
+function applyEvalExpressions(command) {
+	let result = "";
+	let index = 0;
+
+	while (index < command.length) {
+		const start = command.indexOf("eval(", index);
+
+		if (start === -1) {
+			result += command.slice(index);
+			break;
+		}
+
+		const expressionStart = start + 5;
+		const expressionEnd = findClosingParen(command, expressionStart);
+
+		if (expressionEnd === -1) {
+			result += command.slice(index);
+			break;
+		}
+
+		result += command.slice(index, start);
+		result += calculateExpression(command.slice(expressionStart, expressionEnd));
+		index = expressionEnd + 1;
+	}
+
+	return result;
+}
+
+function findClosingParen(value, start) {
+	let depth = 1;
+
+	for (let index = start; index < value.length; index += 1) {
+		if (value[index] === "(") depth += 1;
+		if (value[index] === ")") depth -= 1;
+		if (depth === 0) return index;
+	}
+
+	return -1;
+}
+
+function calculateExpression(expression) {
+	try {
+		return String(Function('"use strict"; return (' + expression + ")")());
+	} catch {
+		return "";
+	}
+}
+
 function escapeRegExp(value) {
 	return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
@@ -189,6 +271,20 @@ function hideTemplateForm() {
 	if (newTemplateBtn) {
 		newTemplateBtn.hidden = false;
 	}
+}
+
+function showCopied(output) {
+	const previousTitle = output.title;
+
+	output.classList.add("copied");
+	output.title = "Copied";
+	output.setAttribute("aria-label", "Copied");
+
+	setTimeout(() => {
+		output.classList.remove("copied");
+		output.title = previousTitle;
+		output.setAttribute("aria-label", "Copy output");
+	}, 1000);
 }
 
 async function copyText(text) {

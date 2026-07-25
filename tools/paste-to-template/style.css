@@ -1,6 +1,6 @@
 .template-row {
 	display: grid;
-	grid-template-columns: 180px 320px 32px 1fr;
+	grid-template-columns: 32px 180px 320px 1fr;
 	align-items: center;
 	gap: 12px;
 	padding: 6px 0;
@@ -25,13 +25,17 @@
 }
 
 .template-output {
+	position: relative;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	color: #555;
+	cursor: pointer;
+	padding: 5px 72px 5px 8px;
+	border-radius: 6px;
 }
 
-.copy-btn {
+.delete-btn {
 	width: 32px;
 	height: 32px;
 	border: 1px solid #ddd;
@@ -42,8 +46,29 @@
 	line-height: 1;
 }
 
-.copy-btn:hover {
+.delete-btn:hover {
 	background: #f7f7f7;
+}
+
+.template-output:hover,
+.template-output:focus {
+	background: #f7f7f7;
+	outline: none;
+}
+
+.template-output.copied {
+	background: #e8f7ee;
+	color: #166534;
+}
+
+.template-output.copied::after {
+	content: "Copied";
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 12px;
+	font-weight: 600;
 }
 
 .template-form {
@@ -84,4 +109,31 @@
 .form-actions {
 	display: flex;
 	gap: 8px;
+}
+
+.how-to {
+	margin-top: 24px;
+	padding-top: 16px;
+	border-top: 1px solid #eee;
+	color: #444;
+}
+
+.how-to h2 {
+	margin: 0 0 8px;
+	font-size: 18px;
+}
+
+.how-to ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.how-to li {
+	margin: 6px 0;
+}
+
+.how-to code {
+	padding: 1px 4px;
+	border-radius: 4px;
+	background: #f3f3f3;
 }

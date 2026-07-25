@@ -97,7 +97,7 @@
 					<textarea
 						id="templateCommand"
 						name="command"
-						placeholder="Type your command with {{variables}}"
+						placeholder="Command with {{variable}}, {{datetime}}, or eval(1 + 2)"
 						required
 					></textarea>
 				</label>
@@ -107,6 +107,16 @@
 					<button type="button" id="cancelTemplateBtn">Cancel</button>
 				</div>
 			</form>
+
+			<section class="how-to">
+				<h2>How to</h2>
+				<ul>
+					<li>Use <code>{{name}}</code> to create an input named <code>name</code>.</li>
+					<li>Use <code>{{date}}</code>, <code>{{time}}</code>, <code>{{datetime}}</code>, or <code>{{timestamp}}</code> for automatic values.</li>
+					<li>Use <code>eval(2 + 3)</code> to calculate a value inside a command.</li>
+					<li>Click a completed command to copy it. It turns green when copied.</li>
+				</ul>
+			</section>
 		</main>
 
 		<footer>
