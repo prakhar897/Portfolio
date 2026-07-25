@@ -15,18 +15,20 @@ const defaults = [
 	},
 ];
 
-let templates = JSON.parse(localStorage.getItem(STORAGE));
+let templates = loadTemplates();
 
 if (!Array.isArray(templates)) {
-	templates = defaults;
+	templates = [...defaults];
 	save();
 }
 
 const container = document.getElementById("templates");
 
-render();
+if (container) {
+	render();
+}
 
-document.getElementById("newTemplateBtn").addEventListener("click", () => {
+document.getElementById("newTemplateBtn")?.addEventListener("click", () => {
 	const name = prompt("Template name");
 
 	if (!name) return;
@@ -47,10 +49,24 @@ document.getElementById("newTemplateBtn").addEventListener("click", () => {
 });
 
 function save() {
-	localStorage.setItem(STORAGE, JSON.stringify(templates));
+	try {
+		localStorage.setItem(STORAGE, JSON.stringify(templates));
+	} catch {
+		// The app still works for the current page view if storage is blocked.
+	}
+}
+
+function loadTemplates() {
+	try {
+		return JSON.parse(localStorage.getItem(STORAGE));
+	} catch {
+		return null;
+	}
 }
 
 function render() {
+	if (!container) return;
+
 	container.innerHTML = "";
 
 	templates.forEach((template) => {
@@ -69,7 +85,10 @@ function render() {
 
 		const copy = document.createElement("button");
 		copy.className = "copy-btn";
-		copy.textContent = "Copy";
+		copy.type = "button";
+		copy.textContent = "📋";
+		copy.setAttribute("aria-label", `Copy ${template.name} output`);
+		copy.title = "Copy";
 
 		const values = {};
 
@@ -104,27 +123,27 @@ function render() {
 		}
 
 		copy.addEventListener("click", async () => {
-			await navigator.clipboard.writeText(output.textContent);
+			await copyText(output.textContent);
 
-			copy.textContent = "Copied";
+			copy.textContent = "✅";
 
 			setTimeout(() => {
-				copy.textContent = "Copy";
+				copy.textContent = "📋";
 			}, 1000);
 		});
 
 		update();
 
-		row.append(name, inputs, output, copy);
+		row.append(name, inputs, copy, output);
 
 		container.appendChild(row);
 	});
 }
 
 function processValue(ph, value) {
-	if (ph === "date") return new Date().toLocaleDateString();
+	if (ph === "date") return value || new Date().toLocaleDateString();
 
-	if (ph === "datetime") return new Date().toLocaleString();
+	if (ph === "datetime") return value || new Date().toLocaleString();
 
 	if (ph.startsWith("upper:")) return value.toUpperCase();
 
@@ -139,4 +158,21 @@ function processValue(ph, value) {
 	}
 
 	return value;
+}
+
+async function copyText(text) {
+	if (navigator.clipboard?.writeText) {
+		await navigator.clipboard.writeText(text);
+		return;
+	}
+
+	const textarea = document.createElement("textarea");
+	textarea.value = text;
+	textarea.setAttribute("readonly", "");
+	textarea.style.position = "fixed";
+	textarea.style.opacity = "0";
+	document.body.appendChild(textarea);
+	textarea.select();
+	document.execCommand("copy");
+	textarea.remove();
 }

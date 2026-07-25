@@ -1,6 +1,6 @@
 .template-row {
 	display: grid;
-	grid-template-columns: 180px 320px 1fr;
+	grid-template-columns: 180px 320px 32px 1fr;
 	align-items: center;
 	gap: 12px;
 	padding: 6px 0;
@@ -29,4 +29,19 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	color: #555;
+}
+
+.copy-btn {
+	width: 32px;
+	height: 32px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	background: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.copy-btn:hover {
+	background: #f7f7f7;
 }
