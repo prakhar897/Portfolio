@@ -120,7 +120,7 @@ function render() {
 		placeholders.forEach((ph) => {
 			const input = document.createElement("input");
 
-			input.placeholder = ph;
+			input.placeholder = "{{" + ph + "}}";
 
 			input.addEventListener("input", () => {
 				values[ph] = processValue(ph, input.value);
@@ -137,7 +137,7 @@ function render() {
 			placeholders.forEach((ph) => {
 				result = result.replace(
 					new RegExp("{{\\s*" + escapeRegExp(ph) + "\\s*}}", "g"),
-					values[ph] || "",
+					values[ph] || "{{" + ph + "}}",
 				);
 			});
 
