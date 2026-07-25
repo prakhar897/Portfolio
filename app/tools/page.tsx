@@ -8,7 +8,7 @@ const Page = () => {
 			rel="noreferrer"
 			className="text-2xl"
 		>
-			paste-to-template.softwaredesing.ing
+			paste-to-template.softwaredesign.ing
 		</a>
 	);
 };
