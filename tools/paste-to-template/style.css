@@ -1,3 +1,10 @@
+.intro {
+	max-width: 760px;
+	margin: 8px 0 20px;
+	color: #444;
+	line-height: 1.5;
+}
+
 .template-row {
 	display: grid;
 	grid-template-columns: 32px 40px 180px 320px 1fr;
@@ -124,7 +131,9 @@
 }
 
 .how-to,
-.keyboard-shortcuts {
+.keyboard-shortcuts,
+.storage-note,
+.about-tool {
 	margin-top: 24px;
 	padding-top: 16px;
 	border-top: 1px solid #eee;
@@ -132,7 +141,8 @@
 }
 
 .how-to h2,
-.keyboard-shortcuts h2 {
+.keyboard-shortcuts h2,
+.about-tool h2 {
 	margin: 0 0 8px;
 	font-size: 18px;
 }
@@ -146,6 +156,18 @@
 .how-to li,
 .keyboard-shortcuts li {
 	margin: 6px 0;
+}
+
+.about-tool p {
+	max-width: 820px;
+	margin: 8px 0;
+	line-height: 1.55;
+}
+
+.storage-note p {
+	margin: 0;
+	color: #555;
+	line-height: 1.5;
 }
 
 .how-to code {

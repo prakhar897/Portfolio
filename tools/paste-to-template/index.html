@@ -3,13 +3,59 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Template Builder</title>
+		<title>Paste to Template - Fast reusable text templates</title>
+		<meta
+			name="description"
+			content="Paste to Template is a fast browser tool for creating reusable text templates with variables, dates, calculations, keyboard shortcuts, and automatic clipboard copy."
+		/>
+		<meta
+			name="keywords"
+			content="paste to template, text template tool, reusable templates, clipboard automation, template builder, text snippets"
+		/>
+		<meta name="author" content="Prakhar Gupta" />
+		<meta name="robots" content="index, follow" />
+		<link rel="canonical" href="https://paste-to-template.softwaredesing.ing/" />
+		<meta name="theme-color" content="#ffffff" />
+		<meta property="og:title" content="Paste to Template" />
+		<meta
+			property="og:description"
+			content="Create reusable text templates with variables, built-in dates, calculations, keyboard shortcuts, and automatic clipboard copy."
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://paste-to-template.softwaredesing.ing/" />
+		<meta property="og:site_name" content="Paste to Template" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Paste to Template" />
+		<meta
+			name="twitter:description"
+			content="A fast browser tool for reusable text templates and automatic clipboard copy."
+		/>
 		<link rel="stylesheet" href="style.css" />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebApplication",
+				"name": "Paste to Template",
+				"url": "https://paste-to-template.softwaredesing.ing/",
+				"description": "A browser tool for creating reusable text templates with variables, built-in dates, calculations, keyboard shortcuts, and automatic clipboard copy.",
+				"applicationCategory": "ProductivityApplication",
+				"operatingSystem": "Any",
+				"author": {
+					"@type": "Person",
+					"name": "Prakhar Gupta"
+				},
+				"offers": {
+					"@type": "Offer",
+					"price": "0",
+					"priceCurrency": "USD"
+				}
+			}
+		</script>
 		<script src="index.js" defer></script>
 	</head>
 	<body>
 		<header>
-			<h1>Template Builder</h1>
+			<h1>Paste to template</h1>
 		</header>
 
 		<main>
@@ -111,25 +157,74 @@
 			<section class="how-to">
 				<h2>How to</h2>
 				<ul>
-					<li>Use <code>{{name}}</code> to create an input named <code>name</code>.</li>
-					<li>Use <code>{{date}}</code>, <code>{{time}}</code>, <code>{{datetime}}</code>, or <code>{{timestamp}}</code> for automatic values.</li>
-					<li>Use <code>eval(2 + 3)</code> to calculate a value inside a command.</li>
-					<li>Click a completed command to copy it. It turns green when copied.</li>
-					<li>Fill every text box in a template to copy the completed command automatically.</li>
+					<li>
+						Use <code>{{name}}</code> to create an input named
+						<code>name</code>.
+					</li>
+					<li>
+						Use <code>{{date}}</code>, <code>{{time}}</code>,
+						<code>{{datetime}}</code>, or
+						<code>{{timestamp}}</code> for automatic values.
+					</li>
+					<li>
+						Use <code>eval(2 + 3)</code> to calculate a value inside
+						a command.
+					</li>
+					<li>
+						Click a completed command to copy it. It turns green
+						when copied.
+					</li>
+					<li>
+						Fill every text box in a template to copy the completed
+						command automatically.
+					</li>
 				</ul>
 			</section>
 
 			<section class="keyboard-shortcuts">
 				<h2>Keyboard shortcuts</h2>
 				<ul>
-					<li>Press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + a template number to focus its first text box. For template 12, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>1</kbd>, then <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>2</kbd>.</li>
+					<li>
+						Press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + a template number
+						to focus its first text box. For template 12, press
+						<kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>1</kbd>, then
+						<kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>2</kbd>.
+					</li>
 				</ul>
 			</section>
-		</main>
 
-		<footer>
-			Templates are stored locally in your browser using Local Storage.
-			They will be lost if browser storage is cleared.
-		</footer>
+			<section class="storage-note">
+				<p>
+					Templates are stored locally in your browser using Local
+					Storage. They will be lost if browser storage is cleared.
+				</p>
+			</section>
+
+			<section class="about-tool">
+				<h2>What Paste to Template is good for</h2>
+				<p class="intro">
+					A fast text template builder for reusable messages,
+					commands, emails, invoices, and snippets. Fill variables
+					once, generate the final text instantly, and copy it to your
+					clipboard automatically.
+				</p>
+				<p>
+					Paste to Template helps you turn repeated writing into
+					reusable text templates. It is useful for support replies,
+					sales outreach, meeting notes, invoice text, status updates,
+					password reset messages, shell commands, and any workflow
+					where the same sentence or command needs a few changing
+					values.
+				</p>
+				<p>
+					Templates run locally in your browser and can include custom
+					variables, automatic date and time values, simple
+					calculations, and keyboard shortcuts for quickly jumping to a
+					template. Once every required field is filled, the completed
+					text is copied automatically so it is ready to paste into
+					email, chat, documents, terminals, or internal tools.
+				</p>
+			</section>
+		</main>
 	</body>
 </html>
