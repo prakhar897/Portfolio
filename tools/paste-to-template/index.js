@@ -28,17 +28,15 @@ const templateForm = document.getElementById("templateForm");
 const templateName = document.getElementById("templateName");
 const templateCommand = document.getElementById("templateCommand");
 const cancelTemplateBtn = document.getElementById("cancelTemplateBtn");
+let shortcutDigits = "";
+let shortcutTimer = null;
 
 if (container) {
 	render();
 }
 
 newTemplateBtn?.addEventListener("click", () => {
-	if (!templateForm) return;
-
-	templateForm.hidden = false;
-	newTemplateBtn.hidden = true;
-	templateName?.focus();
+	showTemplateForm();
 });
 
 cancelTemplateBtn?.addEventListener("click", () => {
@@ -59,6 +57,15 @@ templateForm?.addEventListener("submit", (event) => {
 	save();
 	render();
 	hideTemplateForm();
+});
+
+document.addEventListener("keydown", (event) => {
+	const modifier = event.metaKey || event.ctrlKey;
+
+	if (modifier && /^\d$/.test(event.key)) {
+		event.preventDefault();
+		queueTemplateShortcut(event.key);
+	}
 });
 
 function save() {
@@ -86,6 +93,11 @@ function render() {
 		const row = document.createElement("div");
 		row.className = "template-row";
 
+		const shortcut = document.createElement("div");
+		shortcut.className = "template-shortcut";
+		shortcut.textContent = String(index + 1);
+		shortcut.title = `Press Cmd/Ctrl + ${index + 1}`;
+
 		const name = document.createElement("div");
 		name.className = "template-name";
 		name.textContent = template.name;
@@ -108,6 +120,7 @@ function render() {
 		remove.title = "Delete";
 
 		const values = {};
+		let lastCopiedText = "";
 
 		const placeholders = [
 			...new Set(
@@ -126,6 +139,7 @@ function render() {
 				values[ph] = processValue(ph, input.value);
 
 				update();
+				copyIfComplete();
 			});
 
 			inputs.appendChild(input);
@@ -165,9 +179,28 @@ function render() {
 
 		update();
 
-		row.append(remove, name, inputs, output);
+		row.append(remove, shortcut, name, inputs, output);
 
 		container.appendChild(row);
+
+		function copyIfComplete() {
+			const templateInputs = [...inputs.querySelectorAll("input")];
+			const isComplete =
+				templateInputs.length > 0 &&
+				templateInputs.every((input) => input.value.trim());
+
+			if (!isComplete) {
+				lastCopiedText = "";
+				return;
+			}
+
+			if (output.textContent === lastCopiedText) return;
+
+			lastCopiedText = output.textContent;
+			copyText(output.textContent)
+				.then(() => showCopied(output))
+				.catch(() => {});
+		}
 	});
 }
 
@@ -273,8 +306,35 @@ function hideTemplateForm() {
 	}
 }
 
+function showTemplateForm() {
+	if (!templateForm) return;
+
+	templateForm.hidden = false;
+
+	if (newTemplateBtn) {
+		newTemplateBtn.hidden = true;
+	}
+
+	templateName?.focus();
+}
+
+function queueTemplateShortcut(digit) {
+	shortcutDigits += digit;
+
+	if (shortcutTimer) {
+		clearTimeout(shortcutTimer);
+	}
+
+	shortcutTimer = setTimeout(() => {
+		focusTemplateInput(Number(shortcutDigits));
+		shortcutDigits = "";
+		shortcutTimer = null;
+	}, 450);
+}
+
 function showCopied(output) {
 	const previousTitle = output.title;
+	const previousLabel = output.getAttribute("aria-label");
 
 	output.classList.add("copied");
 	output.title = "Copied";
@@ -283,8 +343,17 @@ function showCopied(output) {
 	setTimeout(() => {
 		output.classList.remove("copied");
 		output.title = previousTitle;
-		output.setAttribute("aria-label", "Copy output");
+		output.setAttribute("aria-label", previousLabel || "Copy output");
 	}, 1000);
+}
+
+function focusTemplateInput(templateNumber) {
+	if (!Number.isInteger(templateNumber) || templateNumber < 1) return;
+
+	const row = container?.querySelectorAll(".template-row")[templateNumber - 1];
+	const firstInput = row?.querySelector(".template-inputs input");
+
+	firstInput?.focus();
 }
 
 async function copyText(text) {

@@ -1,10 +1,22 @@
 .template-row {
 	display: grid;
-	grid-template-columns: 32px 180px 320px 1fr;
+	grid-template-columns: 32px 40px 180px 320px 1fr;
 	align-items: center;
 	gap: 12px;
 	padding: 6px 0;
 	border-bottom: 1px solid #eee;
+}
+
+.template-shortcut {
+	width: 28px;
+	height: 28px;
+	border: 1px solid #ddd;
+	border-radius: 999px;
+	color: #555;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 26px;
+	text-align: center;
 }
 
 .template-name {
@@ -111,24 +123,28 @@
 	gap: 8px;
 }
 
-.how-to {
+.how-to,
+.keyboard-shortcuts {
 	margin-top: 24px;
 	padding-top: 16px;
 	border-top: 1px solid #eee;
 	color: #444;
 }
 
-.how-to h2 {
+.how-to h2,
+.keyboard-shortcuts h2 {
 	margin: 0 0 8px;
 	font-size: 18px;
 }
 
-.how-to ul {
+.how-to ul,
+.keyboard-shortcuts ul {
 	margin: 0;
 	padding-left: 20px;
 }
 
-.how-to li {
+.how-to li,
+.keyboard-shortcuts li {
 	margin: 6px 0;
 }
 
@@ -136,4 +152,17 @@
 	padding: 1px 4px;
 	border-radius: 4px;
 	background: #f3f3f3;
+}
+
+.keyboard-shortcuts kbd {
+	display: inline-block;
+	min-width: 1.4em;
+	padding: 1px 5px;
+	border: 1px solid #ccc;
+	border-bottom-width: 2px;
+	border-radius: 4px;
+	background: #fafafa;
+	color: #333;
+	font: 12px/1.4 system-ui, sans-serif;
+	text-align: center;
 }
