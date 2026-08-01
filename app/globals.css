@@ -24,6 +24,73 @@
 	--window-header-bg: #1c2734;
 	--code-bg: #1c2734;
 	--glow-color: rgba(255, 215, 0, 0.3);
+	--blueprint-bg: #3a6d8a;
+	--blueprint-bg-deep: #2f5570;
+	--blueprint-minor-line: rgba(255, 255, 255, 0.1);
+	--blueprint-major-line: rgba(255, 255, 255, 0.22);
+	--blueprint-minor-size: 20px;
+	--blueprint-major-size: 100px;
+	--blueprint-cross-layer: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='rgba(255,244,214,0.55)' stroke-width='1' stroke-linecap='square'%3E%3Cpath d='M0 0h6M0 0v6M100 0h-6M100 0v6M0 100h6M0 100v-6M100 100h-6M100 100v-6'/%3E%3C/g%3E%3C/svg%3E");
+	--blueprint-glow: radial-gradient(
+		circle at 50% 40%,
+		rgba(255, 255, 255, 0.06),
+		transparent 50%
+	);
+	--blueprint-gradient: linear-gradient(
+		150deg,
+		var(--blueprint-bg),
+		var(--blueprint-bg-deep)
+	);
+}
+
+html[data-blueprint-theme="night"] {
+	--blueprint-bg: #0b1620;
+	--blueprint-bg-deep: #060d14;
+	--blueprint-minor-line: rgba(64, 224, 208, 0.14);
+	--blueprint-major-line: rgba(64, 224, 208, 0.38);
+	--blueprint-minor-size: 16px;
+	--blueprint-major-size: 80px;
+	--blueprint-cross-layer: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='rgba(64,224,208,0.85)' stroke-width='1.5' stroke-linecap='square'%3E%3Cpath d='M0 0h7M0 0v7M80 0h-7M80 0v7M0 80h7M0 80v-7M80 80h-7M80 80v-7'/%3E%3C/g%3E%3C/svg%3E");
+	--blueprint-glow: radial-gradient(
+		circle at 50% 45%,
+		rgba(64, 224, 208, 0.08),
+		transparent 44%
+	);
+	--blueprint-gradient: linear-gradient(
+		135deg,
+		var(--blueprint-bg),
+		var(--blueprint-bg-deep)
+	);
+}
+
+html {
+	min-height: 100vh;
+	background-color: var(--blueprint-bg);
+	background-image:
+		var(--blueprint-cross-layer),
+		linear-gradient(var(--blueprint-major-line) 1px, transparent 1px),
+		linear-gradient(90deg, var(--blueprint-major-line) 1px, transparent 1px),
+		linear-gradient(var(--blueprint-minor-line) 1px, transparent 1px),
+		linear-gradient(90deg, var(--blueprint-minor-line) 1px, transparent 1px),
+		var(--blueprint-glow),
+		var(--blueprint-gradient);
+	background-position:
+		0 0,
+		0 0,
+		0 0,
+		0 0,
+		0 0,
+		0 0,
+		0 0;
+	background-size:
+		var(--blueprint-major-size) var(--blueprint-major-size),
+		var(--blueprint-major-size) var(--blueprint-major-size),
+		var(--blueprint-major-size) var(--blueprint-major-size),
+		var(--blueprint-minor-size) var(--blueprint-minor-size),
+		var(--blueprint-minor-size) var(--blueprint-minor-size),
+		100% 100%,
+		100% 100%;
+	background-attachment: fixed;
 }
 
 /* CRT Effects */
@@ -258,6 +325,14 @@ a:hover {
 	font-family: var(--font-main);
 }
 
+.nav-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
 /* Nav links container - flexbox for clean wrapping */
 .nav-links {
 	display: flex;
@@ -281,6 +356,68 @@ a:hover {
 	background: var(--window-header-bg);
 	border-color: var(--links);
 	box-shadow: 0 0 10px var(--glow-color);
+}
+
+.theme-toggle {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 10px;
+	border: 1px solid var(--blueprint-major-line);
+	border-radius: 999px;
+	background: rgba(28, 39, 52, 0.82);
+	color: var(--links);
+	font-family: var(--font-orbitron);
+	font-size: 0.8rem;
+	line-height: 1;
+	text-shadow: 0 0 3px var(--glow-color);
+	box-shadow:
+		0 0 12px rgba(187, 134, 252, 0.12),
+		inset 0 0 12px rgba(255, 255, 255, 0.04);
+}
+
+.theme-toggle:hover {
+	background: var(--window-header-bg);
+	border-color: var(--links);
+	box-shadow: 0 0 12px var(--glow-color);
+	animation: none;
+}
+
+.theme-toggle-track {
+	position: relative;
+	width: 38px;
+	height: 20px;
+	border: 1px solid var(--blueprint-major-line);
+	border-radius: 999px;
+	background: rgba(6, 13, 20, 0.55);
+}
+
+.theme-toggle-thumb {
+	position: absolute;
+	top: 50%;
+	left: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: var(--links);
+	color: var(--window-header-bg);
+	font-family: var(--font-main);
+	font-size: 0.68rem;
+	line-height: 1;
+	transform: translateY(-50%);
+	transition: transform 0.2s ease;
+}
+
+.theme-toggle[aria-pressed="true"] .theme-toggle-thumb {
+	transform: translate(18px, -50%);
+}
+
+.theme-toggle-label {
+	min-width: 3.2rem;
+	text-align: left;
 }
 
 p {
@@ -601,7 +738,6 @@ figcaption {
 /* PC styling with enhanced effects */
 @media (min-width: 768px) {
 	html {
-		background: linear-gradient(135deg, #1c2734, #2c3e50, #34495e);
 		min-height: 100vh;
 	}
 
