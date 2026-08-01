@@ -1,40 +1,85 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Image to Video</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Image to Video Converter | Free Online Tool</title>
+
+		<meta
+			name="description"
+			content="Convert JPG, PNG and WebP images into still videos online. Choose duration and resolution. Free and works entirely in your browser."
+		/>
+
+		<meta
+			name="keywords"
+			content="image to video, picture to video, photo to video, image to mp4, still image video"
+		/>
+
 		<link rel="stylesheet" href="style.css" />
 	</head>
+
 	<body>
 		<div class="container">
-			<h1>Image to Video</h1>
+			<h1>Image to Video Converter</h1>
 
-			<input type="file" id="imageInput" accept="image/*" />
+			<p class="subtitle">
+				Convert an image into a still video directly in your browser.
+			</p>
 
-			<label>
-				Duration (seconds)
-				<input type="number" id="duration" value="5" min="1" />
-			</label>
+			<div class="section">
+				<label for="imageInput"> Select Image </label>
 
-			<label>
-				FPS
-				<input type="number" id="fps" value="30" min="1" max="60" />
-			</label>
+				<input
+					id="imageInput"
+					type="file"
+					accept="image/png,image/jpeg,image/webp"
+				/>
+			</div>
 
-			<label>
-				Resolution
+			<div class="section">
+				<label for="duration"> Duration (seconds) </label>
+
+				<input
+					id="duration"
+					type="number"
+					value="5"
+					min="1"
+					max="600"
+				/>
+			</div>
+
+			<div class="section">
+				<label for="fps"> FPS </label>
+
+				<input id="fps" type="number" value="30" min="1" max="60" />
+			</div>
+
+			<div class="section">
+				<label for="resolution"> Resolution </label>
+
 				<select id="resolution">
 					<option value="original">Original</option>
+
 					<option value="720">720p</option>
+
 					<option value="1080">1080p</option>
 				</select>
-			</label>
+			</div>
 
-			<button id="generate">Generate Video</button>
+			<button id="generate" type="button">Generate Video</button>
 
-			<img id="preview" />
+			<div class="preview">
+				<h2>Preview</h2>
 
-			<a id="download" style="display: none">Download Video</a>
+				<img
+					id="preview"
+					alt="Selected image preview"
+					style="display: none"
+				/>
+			</div>
+
+			<a id="download" style="display: none"> Download Video </a>
 		</div>
 
 		<script src="script.js"></script>
