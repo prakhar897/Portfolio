@@ -233,7 +233,6 @@ const page = () => {
 					</a>
 				</li>
 			</ol>
-			<div className="ml-embedded" data-form="2hzNuN"></div>
 			<BlogFooter />
 			<HNComments hnStoryId="41034604" />
 		</>
