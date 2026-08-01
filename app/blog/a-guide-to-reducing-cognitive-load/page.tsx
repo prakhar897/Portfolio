@@ -1,4 +1,5 @@
 import React from "react";
+import BlogFooter from "@/components/BlogFooter";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -377,16 +378,7 @@ const Page = () => {
 			<br />
 			<br />
 			<br />
-
-			<p>
-				Thanks for reading!! Feel free to contact me at
-				prakhar897@gmail.com
-			</p>
-
-			<br />
-			<br />
-
-			<div className="ml-embedded" data-form="2hzNuN"></div>
+			<BlogFooter />
 		</>
 	);
 };

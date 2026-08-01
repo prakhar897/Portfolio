@@ -1,4 +1,5 @@
 import React from "react";
+import BlogFooter from "@/components/BlogFooter";
 
 import Comic10xEngineers from "./comic-10x-engineers.webp";
 import Image from "next/image";
@@ -233,6 +234,7 @@ const page = () => {
 				</li>
 			</ol>
 			<div className="ml-embedded" data-form="2hzNuN"></div>
+			<BlogFooter />
 			<HNComments hnStoryId="41034604" />
 		</>
 	);

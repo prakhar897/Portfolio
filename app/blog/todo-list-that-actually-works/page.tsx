@@ -1,4 +1,5 @@
 import React from "react";
+import BlogFooter from "@/components/BlogFooter";
 import CoveyQuadrants from "./covey_quadrants.png";
 import Ex1 from "./ex1.jpeg";
 import Ex2 from "./ex2.jpg";
@@ -146,6 +147,7 @@ const page = () => {
 					</a>
 				</li>
 			</ol>
+		    <BlogFooter />
 		</>
 	);
 };

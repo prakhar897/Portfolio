@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import React from "react";
+import BlogFooter from "@/components/BlogFooter";
 import HNComments from "@/components/HNComments";
 
 import type { Metadata } from "next";
@@ -137,6 +138,9 @@ const page = () => {
 
 			<br />
 			<br />
+
+			<BlogFooter />
+
 			<HNComments hnStoryId="46776155" />
 		</>
 	);

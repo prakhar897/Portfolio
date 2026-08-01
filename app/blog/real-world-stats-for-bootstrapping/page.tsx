@@ -1,4 +1,5 @@
 import React from "react";
+import BlogFooter from "@/components/BlogFooter";
 import Pic1 from "./pic1.png";
 import Pic2 from "./pic2.png";
 import Pic3 from "./pic3.png";
@@ -445,14 +446,9 @@ const page = () => {
 					Manan{" "}
 				</a>
 				for proofreading this!! <br />
-				<br />
-				Thats it!! If you want any other insights from the dataset, Feel
-				free to contact me at prakhar897@gmail.com :)
-				<br />
-				<br />
 			</p>
 
-			<div className="ml-embedded" data-form="2hzNuN"></div>
+			<BlogFooter />
 		</>
 	);
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import BlogFooter from "@/components/BlogFooter";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -127,6 +128,7 @@ const Page = () => {
 				say, “LLMs can't do my job.” But if you look closely, the issue
 				isn't capability. It's usage.
 			</p>
+		    <BlogFooter />
 		</>
 	);
 };

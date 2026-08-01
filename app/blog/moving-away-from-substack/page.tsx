@@ -1,6 +1,7 @@
 import HNComments from "@/components/HNComments";
 
 import type { Metadata } from "next";
+import BlogFooter from "@/components/BlogFooter";
 
 export const metadata: Metadata = {
 	title: "Moving Away from Substack",
@@ -108,6 +109,8 @@ const Page = () => {
 					</a>
 				</li>
 			</ol>
+
+			<BlogFooter />
 
 			<HNComments hnStoryId="38300167" />
 		</>

@@ -1,4 +1,5 @@
 import React from "react";
+import BlogFooter from "@/components/BlogFooter";
 import Navbar from "@/components/Navbar";
 
 import Cavemen from "./cavemen.jpg";
@@ -94,6 +95,7 @@ const page = () => {
 				starts generating some revenue before buying a subscription to
 				these.
 			</p>
+		    <BlogFooter />
 		</>
 	);
 };

@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import React from "react";
+import BlogFooter from "@/components/BlogFooter";
 import Pic1 from "./pic1.png";
 import Pic2 from "./pic2.png";
 import Pic3 from "./pic3.png";
@@ -144,6 +145,7 @@ const page = () => {
 					if they seem optional.
 				</li>
 			</ul>
+			<BlogFooter />
 		</>
 	);
 };

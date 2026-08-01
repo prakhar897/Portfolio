@@ -11,6 +11,7 @@ import Link from "next/link";
 import HNComments from "@/components/HNComments";
 
 import type { Metadata } from "next";
+import BlogFooter from "@/components/BlogFooter";
 
 export const metadata: Metadata = {
 	title: "AI is the reason interviews are harder now",
@@ -162,8 +163,8 @@ const page = () => {
 			</p>
 			<br />
 			<br />
-			<p>Thanks for Reading!!</p>
 
+			<BlogFooter />
 			<HNComments hnStoryId="40363135" />
 		</>
 	);

@@ -1,4 +1,5 @@
 import React from "react";
+import BlogFooter from "@/components/BlogFooter";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
@@ -206,6 +207,7 @@ const page = () => {
 					possible anymore.
 				</li>
 			</ul>
+		    <BlogFooter />
 		</>
 	);
 };
