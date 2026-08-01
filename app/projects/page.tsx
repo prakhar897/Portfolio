@@ -120,6 +120,10 @@ const Page = () => {
 				></div>
 			</div>
 
+			<a href="/tools/">
+				<h2> Tools </h2>
+			</a>
+
 			<h2> Other </h2>
 
 			<div className="border p-4 mt-4 mb-4 rounded-2xl">
