@@ -41,6 +41,10 @@ export default function RootLayout({
 					href="https://www.softwaredesign.ing/favicon.png"
 					type="image/x-icon"
 				/>
+				<meta
+					name="viewport"
+					content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"
+				/>
 				<meta property="og:title" content="Prakhar Gupta" />
 				<meta
 					property="og:description"

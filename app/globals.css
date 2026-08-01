@@ -167,10 +167,16 @@ html::after {
 	}
 }
 
+html,
+body {
+	box-sizing: border-box;
+}
+
 body {
 	background-color: var(--background);
 	font-family: var(--font-main);
 	color: var(--paragraphs);
+	width: min(100%, var(--max-width));
 	max-width: var(--max-width);
 	margin: 3% auto;
 	padding: 20px;
@@ -178,6 +184,20 @@ body {
 	line-height: 1.5;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
+	overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+	body {
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 12px 12px 24px;
+	}
+
+	.main-container {
+		padding: 32px 16px 20px;
+	}
 }
 
 /* Window container effect */
