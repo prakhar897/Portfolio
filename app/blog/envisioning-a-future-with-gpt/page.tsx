@@ -206,13 +206,6 @@ const page = () => {
 					possible anymore.
 				</li>
 			</ul>
-
-			<p>
-				Thanks for Reading!! Reach out to me prakhar897@gmail.com for
-				any queries.
-			</p>
-
-			<div className="ml-embedded" data-form="2hzNuN"></div>
 		</>
 	);
 };

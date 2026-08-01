@@ -144,12 +144,6 @@ const page = () => {
 					if they seem optional.
 				</li>
 			</ul>
-
-			<p>Thanks for reading!!</p>
-
-			<br />
-			<br />
-			<div className="ml-embedded" data-form="2hzNuN"></div>
 		</>
 	);
 };

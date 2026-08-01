@@ -133,13 +133,6 @@ const page = () => {
 				doing other tasks. Making it a task will only diminish the joy.
 			</p>
 
-			<p>
-				Thanks for Reading, you can email me at
-				<b> prakhar897@gmail.com</b> to share your thoughts!
-			</p>
-
-			<div className="ml-embedded" data-form="2hzNuN"></div>
-
 			<h2>References</h2>
 			<ol>
 				<li>

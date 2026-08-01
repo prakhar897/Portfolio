@@ -39,8 +39,8 @@ const Page = () => {
 
 			<p>
 				And I realized something, that most non-technical users don't
-				really understand how LLMs work. The problem wasn't the model, It
-				was the process.
+				really understand how LLMs work. The problem wasn't the model,
+				It was the process.
 			</p>
 			<br />
 
@@ -66,16 +66,17 @@ const Page = () => {
 					the tone, and what “good” looks like. We Humans can infer
 					this naturally but LLMs can't. They can't read your mind,
 					sense dissatisfaction, or pick up on subtle cues. If you
-					don't explicitly tell them what you want, they fall back to a
-					safe, generic style, which is rarely what you actually need.
+					don't explicitly tell them what you want, they fall back to
+					a safe, generic style, which is rarely what you actually
+					need.
 				</li>
 			</ul>
 			<br />
 
 			<p>
-				So the real takeaway is: break your work into smaller,
-				explicit tasks. You don't even need to know how to do this
-				perfectly. Here's the workflow I recommend to everyone.
+				So the real takeaway is: break your work into smaller, explicit
+				tasks. You don't even need to know how to do this perfectly.
+				Here's the workflow I recommend to everyone.
 			</p>
 			<br />
 
@@ -126,16 +127,6 @@ const Page = () => {
 				say, “LLMs can't do my job.” But if you look closely, the issue
 				isn't capability. It's usage.
 			</p>
-			<br />
-			<br />
-			<p>Thanks for Reading!!</p>
-
-			<br />
-			<br />
-			<br />
-			<br />
-
-			<div className="ml-embedded" data-form="2hzNuN"></div>
 		</>
 	);
 };

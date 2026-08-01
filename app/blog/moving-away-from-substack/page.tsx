@@ -1,5 +1,3 @@
-import React from "react";
-import Navbar from "@/components/Navbar";
 import HNComments from "@/components/HNComments";
 
 import type { Metadata } from "next";
@@ -110,8 +108,6 @@ const Page = () => {
 					</a>
 				</li>
 			</ol>
-
-			<div className="ml-embedded" data-form="2hzNuN"></div>
 
 			<HNComments hnStoryId="38300167" />
 		</>

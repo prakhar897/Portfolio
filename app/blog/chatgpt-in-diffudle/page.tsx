@@ -94,13 +94,6 @@ const page = () => {
 				starts generating some revenue before buying a subscription to
 				these.
 			</p>
-
-			<p>
-				Thanks for Reading!! Reach out to me prakhar897@gmail.com for
-				any queries.
-			</p>
-
-			<div className="ml-embedded" data-form="2hzNuN"></div>
 		</>
 	);
 };

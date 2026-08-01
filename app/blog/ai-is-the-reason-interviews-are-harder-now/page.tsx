@@ -1,5 +1,3 @@
-import Navbar from "@/components/Navbar";
-import React from "react";
 import Pic2 from "./pic2.png";
 import Pic1 from "./pic1.png";
 import Pic3 from "./pic3.jpeg";
@@ -165,13 +163,6 @@ const page = () => {
 			<br />
 			<br />
 			<p>Thanks for Reading!!</p>
-
-			<br />
-			<br />
-			<br />
-			<br />
-
-			<div className="ml-embedded" data-form="2hzNuN"></div>
 
 			<HNComments hnStoryId="40363135" />
 		</>

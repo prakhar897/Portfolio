@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Image to Video</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Image to Video</h1>
+
+			<input type="file" id="imageInput" accept="image/*" />
+
+			<label>
+				Duration (seconds)
+				<input type="number" id="duration" value="5" min="1" />
+			</label>
+
+			<label>
+				FPS
+				<input type="number" id="fps" value="30" min="1" max="60" />
+			</label>
+
+			<label>
+				Resolution
+				<select id="resolution">
+					<option value="original">Original</option>
+					<option value="720">720p</option>
+					<option value="1080">1080p</option>
+				</select>
+			</label>
+
+			<button id="generate">Generate Video</button>
+
+			<img id="preview" />
+
+			<a id="download" style="display: none">Download Video</a>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
