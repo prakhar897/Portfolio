@@ -15,7 +15,7 @@ import NoticeBoard from "@/components/NoticeBoard";
 
 export const metadata: Metadata = {
 	title: "Prakhar Gupta",
-	description: "Software Engineer, LITM",
+	description: "Software Engineer, LNMIIT",
 };
 
 export default function RootLayout({
