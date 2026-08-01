@@ -46,21 +46,6 @@
 html[data-blueprint-theme="night"] {
 	--blueprint-bg: #0b1620;
 	--blueprint-bg-deep: #060d14;
-	--blueprint-minor-line: rgba(64, 224, 208, 0.14);
-	--blueprint-major-line: rgba(64, 224, 208, 0.38);
-	--blueprint-minor-size: 16px;
-	--blueprint-major-size: 80px;
-	--blueprint-cross-layer: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='rgba(64,224,208,0.85)' stroke-width='1.5' stroke-linecap='square'%3E%3Cpath d='M0 0h7M0 0v7M80 0h-7M80 0v7M0 80h7M0 80v-7M80 80h-7M80 80v-7'/%3E%3C/g%3E%3C/svg%3E");
-	--blueprint-glow: radial-gradient(
-		circle at 50% 45%,
-		rgba(64, 224, 208, 0.08),
-		transparent 44%
-	);
-	--blueprint-gradient: linear-gradient(
-		135deg,
-		var(--blueprint-bg),
-		var(--blueprint-bg-deep)
-	);
 }
 
 html {
@@ -69,11 +54,18 @@ html {
 	background-image:
 		var(--blueprint-cross-layer),
 		linear-gradient(var(--blueprint-major-line) 1px, transparent 1px),
-		linear-gradient(90deg, var(--blueprint-major-line) 1px, transparent 1px),
+		linear-gradient(
+			90deg,
+			var(--blueprint-major-line) 1px,
+			transparent 1px
+		),
 		linear-gradient(var(--blueprint-minor-line) 1px, transparent 1px),
-		linear-gradient(90deg, var(--blueprint-minor-line) 1px, transparent 1px),
-		var(--blueprint-glow),
-		var(--blueprint-gradient);
+		linear-gradient(
+			90deg,
+			var(--blueprint-minor-line) 1px,
+			transparent 1px
+		),
+		var(--blueprint-glow), var(--blueprint-gradient);
 	background-position:
 		0 0,
 		0 0,
